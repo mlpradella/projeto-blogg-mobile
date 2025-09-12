@@ -10,7 +10,8 @@ import { Link } from 'expo-router';
 export default function HomeScreen() {
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
+      headerBackgroundColor={{ light: '#A1CEDC', dark: '#FFBE63' }}
+      
       headerImage={
         <Image
           source={require('@/assets/images/partial-react-logo.png')}
@@ -18,8 +19,8 @@ export default function HomeScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
-        <HelloWave />
+        <ThemedText type="title" style={styles.teste4}>RECOMENDAÇÕES</ThemedText>
+        
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Step 1: Try it</ThemedText>
@@ -80,9 +81,10 @@ export default function HomeScreen() {
 
 const styles = StyleSheet.create({
   titleContainer: {
-    flexDirection: 'row',
+
     alignItems: 'center',
     gap: 8,
+    
   },
   stepContainer: {
     gap: 8,
@@ -95,4 +97,9 @@ const styles = StyleSheet.create({
     left: 0,
     position: 'absolute',
   },
+  teste4: {
+    color: '#FFBE63',
+  },
 });
+
+
