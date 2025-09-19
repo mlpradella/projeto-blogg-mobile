@@ -1,5 +1,5 @@
 import { Image } from 'expo-image';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 import ParallaxScrollView from '@/components/parallax-scroll-view';
 import { ThemedText } from '@/components/themed-text';
@@ -7,18 +7,16 @@ import { ThemedView } from '@/components/themed-view';
 
 export default function HomeScreen() {
   return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#000b6' }}
-      headerImage={
-        <Image
-          source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
-        />
-      }>
+    <View style={styles.container}>
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="title" style={styles.titulo}>Animação</ThemedText>
       </ThemedView>
-    </ParallaxScrollView>
+      <Image
+          source={require('@/assets/images/noiva-cadaver.png')}
+          style={styles.imagem}
+          contentFit="cover"
+        />
+    </View>
   );
 }
 
@@ -26,20 +24,27 @@ const styles = StyleSheet.create({
   titleContainer: {
     alignItems: 'center',
     gap: 8,
+    backgroundColor: '#00002B',
   },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
-  },
-  reactLogo: {
-    height: 0,
-    width: 0,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
+
+  imagem: {
+    width: 150,
+    height: 200,
+    borderRadius: 10,
+    borderLeftWidth: 40,
+    borderTopWidth: 30,
+    borderColor: '#00002B',
   },
   titulo: {
-    color: '#AB51DF'
-  }
+    color: '#AB51DF',
+    fontSize: 24,
+    fontWeight: 'bold',
+    borderTopWidth: 15,
+    borderColor: '#00002B',
+  },
+  
+  container: {
+    flex: 1,
+    backgroundColor: '#00002B',
+  },
 });
-
