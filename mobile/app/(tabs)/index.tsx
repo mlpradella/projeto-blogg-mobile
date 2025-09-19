@@ -1,22 +1,12 @@
-import { Image } from 'expo-image';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
-import ParallaxScrollView from '@/components/parallax-scroll-view';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 
 
 export default function HomeScreen() {
   return (
-    <ParallaxScrollView
-    
-      headerBackgroundColor={{ light: '#00002B', dark: '#00002B' }}
-      headerImage={
-        <Image
-          source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
-        />
-      }>
+    <View style={styles.container}>
 
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="subtitle">new blog!</ThemedText>
@@ -25,15 +15,20 @@ export default function HomeScreen() {
       </ThemedView>
 
       
-    </ParallaxScrollView>
+      </View>
   );
 }
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#00002B',
+  },
 
   titleContainer: {
     alignItems: 'center',
     gap: 8,
+    backgroundColor: '#00002b'
   },
   stepContainer: {
     gap: 8,
