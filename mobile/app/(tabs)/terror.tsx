@@ -1,5 +1,5 @@
 import { Image } from 'expo-image';
-import { Platform, StyleSheet } from 'react-native';
+import { Platform, StyleSheet, View } from 'react-native';
 
 import { HelloWave } from '@/components/hello-wave';
 import ParallaxScrollView from '@/components/parallax-scroll-view';
@@ -9,75 +9,24 @@ import { Link } from 'expo-router';
 
 export default function HomeScreen() {
   return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#950c0c', dark: '#950c0c' }}
-      headerImage={
-        <Image
-          source={require('@/assets/images/ghost.png')}
-          style={styles.reactLogo}
-        />
-      }>
-      <ThemedView style={styles.titleContainer}>
+    <View style={styles.container}>
+      
         <ThemedText type="title" style={styles.teste2}>TERROR</ThemedText >
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle" style={styles.subtitulo}>Step 1: Try it</ThemedText>
-        <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({
-              ios: 'cmd + d',
-              android: 'cmd + m',
-              web: 'F12',
-            })}
-          </ThemedText>{' '}
-          to open developer tools.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <Link href="/modal">
-          <Link.Trigger>
-            <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-          </Link.Trigger>
-          <Link.Preview />
-          <Link.Menu>
-            <Link.MenuAction title="Action" icon="cube" onPress={() => alert('Action pressed')} />
-            <Link.MenuAction
-              title="Share"
-              icon="square.and.arrow.up"
-              onPress={() => alert('Share pressed')}
-            />
-            <Link.Menu title="More" icon="ellipsis">
-              <Link.MenuAction
-                title="Delete"
-                icon="trash"
-                destructive
-                onPress={() => alert('Delete pressed')}
-              />
-            </Link.Menu>
-          </Link.Menu>
-        </Link>
-
-        <ThemedText>
-          {`Tap the Explore tab to learn more about what's included in this starter app.`}
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          {`When you're ready, run `}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
-      </ThemedView>
-    </ParallaxScrollView>
+        <ThemedText type="title" style={styles.teste22}>top terror da atualidade</ThemedText >
+        <Image
+        source={require('@/assets/images/invocaçao.png')}
+        style={styles.newImageStyle}
+        />
+         <ThemedText type="title" style={styles.teste222}>o filme e muito bom, uma das minhas franquias de filmes favorita, eu amo esse tipo de filme de terror religioso mas acho que mesmo sem gostar, todo mundo deveria ver esse filme, a trilha sonora e o suspense antes do susto sao os seus pontos altos  </ThemedText >
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#00002E',
+  },
   titleContainer: {
    
     alignItems: 'center',
@@ -87,6 +36,7 @@ const styles = StyleSheet.create({
   stepContainer: {
     gap: 8,
     marginBottom: 8,
+    color: '#00000',
   },
   reactLogo: {
     height: 280,
@@ -96,9 +46,33 @@ const styles = StyleSheet.create({
     position: 'absolute',
   },
   teste2: {
-    color: '#911315'
+    color: '#911315',
+    display: 'flex',
+    justifyContent: 'center',
+    fontFamily: 'ui-sans-serif',
+  },
+  teste22: {
+    color: '#E0E0E0',
+    display: 'flex',
+    justifyContent: 'center',
+    fontFamily: 'ui-sans-serif',
   },
   subtitulo: {
     color: '#ffffff',
+  },
+  newImageStyle: {
+    height: 280, 
+    width: 170,
+  marginLeft: 10,
+  marginTop: 30,
+  borderRadius: 25,
+  },
+  teste222: {
+    marginTop: 20,
+    width: 200,
+    height: 15,
+    fontSize: 20,
+    marginLeft: 10,
+    fontFamily: 'ui-sans-serif',
   },
 });
