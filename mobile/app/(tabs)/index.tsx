@@ -9,9 +9,9 @@ export default function HomeScreen() {
     <View style={styles.container}>
 
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="subtitle">new blog!</ThemedText>
-        <ThemedText type="title">POCSCAST</ThemedText>
-        <ThemedText type="subtitle">MOVIES</ThemedText>
+        <ThemedText type="subtitle" >new blog!</ThemedText>
+        <ThemedText type="title"  style={styles.fonte}>POCSCAST</ThemedText>
+        <ThemedText type="subtitle" >MOVIES</ThemedText>
       </ThemedView>
 
       
@@ -20,6 +20,11 @@ export default function HomeScreen() {
 }
 
 const styles = StyleSheet.create({
+
+fonte :{
+  fontFamily : 'ui-sans-serif'
+},
+
   container: {
     flex: 1,
     backgroundColor: '#00002B',
@@ -28,8 +33,10 @@ const styles = StyleSheet.create({
   titleContainer: {
     alignItems: 'center',
     gap: 8,
-    backgroundColor: '#00002b'
+    backgroundColor: '#00002b',
+    fontFamily: 'ui-sans-serif',
   },
+  
   stepContainer: {
     gap: 8,
     marginBottom: 8,
@@ -41,4 +48,7 @@ const styles = StyleSheet.create({
     left: 0,
     position: 'absolute',
   },
+
+
+
 });
