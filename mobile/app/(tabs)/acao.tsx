@@ -11,15 +11,17 @@ import { getBackgroundColorAsync } from 'expo-system-ui';
 export default function HomeScreen() {
   return (
         <View style={styles.container}>
-          <ThemedView style={styles.titleContainer}>
-            <ThemedText type="title">Ação</ThemedText>
+          <ThemedView style={styles.titulo}>
+            <ThemedText type="title" style={styles.tituloacao}>Ação</ThemedText>
           </ThemedView>
     
           <ThemedView style={styles.stepContainer}>
             <ThemedText type="subtitle">Tropa de elite</ThemedText>
           </ThemedView>
-    
-      
+          <Image
+        source={require('@/assets/images/tropa-elite.png')}
+        style={styles.newImageStyle}
+        />
         </View>
       );
     }
@@ -30,11 +32,15 @@ export default function HomeScreen() {
         backgroundColor: '#00002B', 
       },
 
-      titleContainer: {
-        flexDirection: 'row',
+      titulo: {
         alignItems: 'center',
         gap: 8,
-        backgroundColor: '#00002B'
+        backgroundColor: '#00002B',
+        textAlign: 'center'
+      },
+
+      tituloacao: {
+        fontFamily: 'ui-sans-serif'
       },
 
       stepContainer: {
@@ -50,6 +56,15 @@ export default function HomeScreen() {
         left: 0,
         position: 'absolute',
       },
+      newImageStyle: {
+        height: 250,
+        width: 'auto', 
+        resizeMode: 'contain',
+        paddingTop: 5, 
+        marginLeft: -420,
+      },
     });
 
+  
+      
 

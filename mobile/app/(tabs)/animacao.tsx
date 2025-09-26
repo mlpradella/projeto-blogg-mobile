@@ -21,7 +21,7 @@ export default function HomeScreen() {
 }
 
 const styles = StyleSheet.create({
-  titleContainer: {
+  titleContainer: { 
     alignItems: 'center',
     gap: 8,
     backgroundColor: '#00002B',
