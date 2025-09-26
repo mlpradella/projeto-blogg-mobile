@@ -10,20 +10,21 @@ import { Link } from 'expo-router';
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <ThemedView style={styles.titleContainer}>
         <ThemedText type="title" style={styles.teste}>DRAMA</ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle" style={styles.testee}>As vantagens de ser invisível</ThemedText>
-      </ThemedView>
-      
+      <div style={styles.ladinho}>
       <Image
         source={require('@/assets/images/vant.png')} 
         style={styles.newImageStyle}
       />
-      
-      <ThemedView style={styles.stepContainer}>
-      </ThemedView>
+      <Image
+        source={require('@/assets/images/12.png')} 
+        style={styles.newImageStyle2}
+      />
+      <div>
+      <ThemedText type="subtitle" style={styles.testeee}>2o12</ThemedText>
+      </div>
+      </div>
     </View>
   );
 }
@@ -50,19 +51,34 @@ const styles = StyleSheet.create({
   },
   teste: {
     fontSize: 40,
+    display: 'flex',
+    justifyContent: 'center',
     color: '#244A80',
     marginTop: 30,
+    fontFamily: 'ui-sans-serif',
   },
   testee: {
     color: '#377A98',
     marginTop: 35,
     marginLeft: 30,
   },
+  testeee: {
+    color: '#E0E0E0',
+    marginLeft: -100,
+  },
   newImageStyle: {
     width: '100%',
-    height: 200,
+    height: 250,
     resizeMode: 'contain',
     marginTop: 5,
-    marginLeft: -120,
+    marginLeft: -170,
+  },
+  newImageStyle2: {
+    height: 10,
+
+  },
+  ladinho: {
+    display: 'flex',
+    justifyContent: 'center',
   },
 });
