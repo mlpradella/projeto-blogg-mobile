@@ -18,6 +18,8 @@ export default function HomeScreen() {
         <ThemedText type="title" style={styles.teste4}>RECOMENDAÇÕES</ThemedText>
         </ThemedView>
 
+        <ThemedText type="title" style={styles.topico}>ROMANCE</ThemedText >
+
         <Image
  source={require('@/assets/images/antesdoamanecer 1.png')}
  style={styles.newImageStyle}
@@ -26,6 +28,7 @@ export default function HomeScreen() {
     </View>
   );
 }
+
 
 const styles = StyleSheet.create({
     container: {
@@ -48,8 +51,14 @@ const styles = StyleSheet.create({
   },
   teste4: {
     color: '#FFBE63',
+    fontFamily: 'ui-sans-serif',
   },
 
+  topico: {
+    color: '#FF3860',
+    fontSize: 20,
+    
+  },
 
 newImageStyle: {
    width: '100%',
