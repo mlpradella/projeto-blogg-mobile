@@ -12,7 +12,7 @@ export default function HomeScreen() {
   return (
     <View style={styles.container}>
           <ThemedView style={styles.titleContainer}>
-            <ThemedText type="title">Romance</ThemedText>
+            <ThemedText type="title" style={styles.titleContainer}>Romance</ThemedText>
           </ThemedView>
     
           <ThemedView style={styles.stepContainer}>
@@ -32,16 +32,18 @@ const styles = StyleSheet.create({
       },
 
       titleContainer: {
-        flexDirection: 'row',
+        color: '#FF6992',
         alignItems: 'center',
         gap: 8,
-        backgroundColor: '#00002B'
+        backgroundColor: '#00002B',
+        paddingTop: 20,
+        fontFamily: 'Bungee',
       },
 
       stepContainer: {
         gap: 8,
         marginBottom: 8,
-        backgroundColor: '#00002B'
+        backgroundColor: '#00002B',
       },
 
       reactLogo: {
