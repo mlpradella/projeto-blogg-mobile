@@ -1,11 +1,7 @@
 import { Image } from 'expo-image';
-import { Platform, StyleSheet, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
-import { HelloWave } from '@/components/hello-wave';
-import ParallaxScrollView from '@/components/parallax-scroll-view';
 import { ThemedText } from '@/components/themed-text';
-import { ThemedView } from '@/components/themed-view';
-import { Link } from 'expo-router';
 
 export default function HomeScreen() {
   return (
@@ -17,13 +13,50 @@ export default function HomeScreen() {
         source={require('@/assets/images/vant.png')} 
         style={styles.newImageStyle}
       />
+    </div>
+    <div style={styles.ladinho2}>
       <Image
         source={require('@/assets/images/12.png')} 
         style={styles.newImageStyle2}
       />
-      <div>
+       </div>
+      <div style={styles.textinho}>
       <ThemedText type="subtitle" style={styles.testeee}>2o12</ThemedText>
       </div>
+
+      <div style={styles.estrelinha}>
+      <Image
+        source={require('@/assets/images/Vector.png')} 
+        style={styles.newImageStyle3}
+      />
+      </div>
+
+      <div style={styles.estrelinha1}>
+      <Image
+        source={require('@/assets/images/Vector.png')} 
+        style={styles.newImageStyle3}
+      />
+      </div>
+
+      <div style={styles.estrelinha2}>
+      <Image
+        source={require('@/assets/images/Vector.png')} 
+        style={styles.newImageStyle3}
+      />
+      </div>
+
+      <div style={styles.estrelinha3}>
+      <Image
+        source={require('@/assets/images/Vector.png')} 
+        style={styles.newImageStyle3}
+      />
+      </div>
+
+      <div style={styles.estrelinha4}>
+      <Image
+        source={require('@/assets/images/Vector.png')} 
+        style={styles.newImageStyle3}
+      />
       </div>
     </View>
   );
@@ -74,11 +107,47 @@ const styles = StyleSheet.create({
     marginLeft: -170,
   },
   newImageStyle2: {
-    height: 10,
-
+    width: 30,
+    height: 30,
+  },
+  newImageStyle3: {
+    width: 20,
+    height: 20,
   },
   ladinho: {
     display: 'flex',
     justifyContent: 'center',
+  },
+  ladinho2: {
+    display: 'flex',
+    justifyContent: 'center',
+    marginLeft: 40,
+    marginTop: -245,
+  },
+  textinho: {
+    display: 'flex',
+    justifyContent: 'center',
+    marginLeft: 230,
+    marginTop: -30,
+  },
+  estrelinha: {
+    marginLeft: 200,
+    marginTop: 10,
+  },
+  estrelinha1: {
+    marginLeft: 225,
+    marginTop: -20,
+  },
+  estrelinha2: {
+    marginLeft: 250,
+    marginTop: -20,
+  },
+  estrelinha3: {
+    marginLeft: 275,
+    marginTop: -20,
+  },
+  estrelinha4: {
+    marginLeft: 300,
+    marginTop: -20,
   },
 });
