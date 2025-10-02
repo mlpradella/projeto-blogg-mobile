@@ -18,7 +18,16 @@ export default function HomeScreen() {
         <ThemedText type="title" style={styles.teste4}>RECOMENDAÇÕES</ThemedText>
         </ThemedView>
 
-        <ThemedText type="title" style={styles.topico}>ROMANCE</ThemedText >
+
+<ThemedView style={styles.opniao}>
+
+        <ThemedText type="subtitle" style={styles.topico}>ROMANCE</ThemedText >
+</ThemedView>
+
+
+        <ThemedText type='subtitle' style={styles.texto}>Sinto que nunca vi o amor ser retratado de forma tão pura, sincera e carinhosa, falando sobre paixão, conversa e segurança. Não é apenas sobre um romance jovem, é sobre conversar sobre nada e tudo ao mesmo tempo, é ter diálogo, paciência, ter conversas profundas andando nas ruas de Vienna, sobre se conhecer, compartilhar e aproveitar os momentos. O primeiro filme mudou a química do meu cérebro, ver eles apenas conversando e falando sobre a vida, o amor, a morte, sobre banalidades do cotidiano, e apenas aproveitando a companhia um do outro me fez tão bem que não sei como colocar em palavras.</ThemedText>
+
+
 
         <Image
  source={require('@/assets/images/antesdoamanecer 1.png')}
@@ -54,10 +63,19 @@ const styles = StyleSheet.create({
     fontFamily: 'ui-sans-serif',
   },
 
+opniao: {
+  marginLeft: -200,
+},
+   
   topico: {
     color: '#FF3860',
     fontSize: 20,
-    
+    marginLeft: 10,
+  },
+
+  texto: {
+    fontSize: 12,
+    color: 'white'
   },
 
 newImageStyle: {
