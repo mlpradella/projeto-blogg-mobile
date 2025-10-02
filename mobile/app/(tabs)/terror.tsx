@@ -1,11 +1,7 @@
 import { Image } from 'expo-image';
-import { Platform, StyleSheet, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
-import { HelloWave } from '@/components/hello-wave';
-import ParallaxScrollView from '@/components/parallax-scroll-view';
 import { ThemedText } from '@/components/themed-text';
-import { ThemedView } from '@/components/themed-view';
-import { Link } from 'expo-router';
 
 export default function HomeScreen() {
   return (
@@ -18,7 +14,14 @@ export default function HomeScreen() {
         style={styles.newImageStyle}
         />
          <ThemedText type="title" style={styles.teste222}>o filme e muito bom, uma das minhas franquias de filmes favorita, eu amo esse tipo de filme de terror religioso mas acho que mesmo sem gostar, todo mundo deveria ver esse filme, a trilha sonora e o suspense antes do susto sao os seus pontos altos  </ThemedText >
+         <div style={styles.teste3}>
+         <Image
+        source={require('@/assets/images/14.png')}
+        style={styles.teste3}
+        />
+         </div>
     </View>
+  
   );
 }
 
@@ -74,5 +77,13 @@ const styles = StyleSheet.create({
     fontSize: 20,
     marginLeft: 10,
     fontFamily: 'ui-sans-serif',
+  },
+  teste3: {
+    display: 'flex',
+    marginLeft: 95,
+    width: 50,
+    height: 50,
+    marginTop: -110,
+    
   },
 });
