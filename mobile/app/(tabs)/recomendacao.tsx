@@ -20,19 +20,26 @@ export default function HomeScreen() {
 
 
 <ThemedView style={styles.opniao}>
-
         <ThemedText type="subtitle" style={styles.topico}>ROMANCE</ThemedText >
 </ThemedView>
 
 
-        <ThemedText type='subtitle' style={styles.texto}>Sinto que nunca vi o amor ser retratado de forma tão pura, sincera e carinhosa, falando sobre paixão, conversa e segurança. Não é apenas sobre um romance jovem, é sobre conversar sobre nada e tudo ao mesmo tempo, é ter diálogo, paciência, ter conversas profundas andando nas ruas de Vienna, sobre se conhecer, compartilhar e aproveitar os momentos. O primeiro filme mudou a química do meu cérebro, ver eles apenas conversando e falando sobre a vida, o amor, a morte, sobre banalidades do cotidiano, e apenas aproveitando a companhia um do outro me fez tão bem que não sei como colocar em palavras.</ThemedText>
+<ThemedView style={styles.im}>
+<Image 
+source={require('@/assets/images/12.png')}
+    style={styles.clas}/>
 
+</ThemedView>
 
 
         <Image
  source={require('@/assets/images/antesdoamanecer 1.png')}
  style={styles.newImageStyle}
  />
+        <ThemedText type='subtitle' style={styles.texto}>Sinto que nunca vi o amor ser retratado de forma tão pura, sincera e carinhosa, falando sobre paixão, conversa e segurança. Não é apenas sobre um romance jovem, é sobre conversar sobre nada e tudo ao mesmo tempo, é ter diálogo, paciência, ter conversas profundas andando nas ruas de Vienna, sobre se conhecer, compartilhar e aproveitar os momentos. O primeiro filme mudou a química do meu cérebro, ver eles apenas conversando e falando sobre a vida, o amor, a morte, sobre banalidades do cotidiano, e apenas aproveitando a companhia um do outro me fez tão bem que não sei como colocar em palavras.</ThemedText>
+
+        
+
 
     </View>
   );
@@ -64,7 +71,7 @@ const styles = StyleSheet.create({
   },
 
 opniao: {
-  marginLeft: -200,
+  marginLeft: -300,
 },
    
   topico: {
@@ -78,12 +85,25 @@ opniao: {
     color: 'white'
   },
 
+clas: {
+  marginRight: 50,
+  width: 30,
+  height: 30,
+  
+
+},
+
+im: {
+  marginTop: -20,
+   backgroundColor: '#00002B'
+},
+
 newImageStyle: {
    width: '100%',
    height: 200,
    resizeMode: 'contain',
    marginTop: 5,
-   marginLeft: -120,
+   marginLeft: -270,
    
     },
   });
