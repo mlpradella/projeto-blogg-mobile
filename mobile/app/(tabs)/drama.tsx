@@ -54,10 +54,22 @@ export default function HomeScreen() {
 
       <div style={styles.estrelinha4}>
       <Image
-        source={require('@/assets/images/Vector.png')} 
+        source={require('@/assets/images/group.png')} 
         style={styles.newImageStyle3}
       />
       </div>
+      <div style={styles.relogio}>
+      <Image
+        source={require('@/assets/images/relogio.png')} 
+        style={styles.newImageStyle3}
+      />
+      </div>
+
+   <div style={styles.tes}>
+      <ThemedText  type="subtitle" style={styles.test}> 4.5 </ThemedText>
+   </div>
+      <ThemedText  type="subtitle" style={styles.testeeee}> Resenha: </ThemedText>
+      <ThemedText  type="subtitle" style={styles.bananinha}>1h 43min</ThemedText>
     </View>
   );
 }
@@ -131,23 +143,48 @@ const styles = StyleSheet.create({
     marginTop: -30,
   },
   estrelinha: {
-    marginLeft: 200,
+    marginLeft: 210,
     marginTop: 10,
   },
   estrelinha1: {
-    marginLeft: 225,
+    marginLeft: 235,
     marginTop: -20,
   },
   estrelinha2: {
-    marginLeft: 250,
+    marginLeft: 260,
     marginTop: -20,
   },
   estrelinha3: {
-    marginLeft: 275,
+    marginLeft: 285,
     marginTop: -20,
   },
   estrelinha4: {
-    marginLeft: 300,
+    marginLeft: 310,
     marginTop: -20,
+  },
+  test: {
+    marginLeft: 335,
+    marginTop: -35,
+  },
+  tes: {
+     marginTop: -55,
+  },
+  testeeee: {
+    color: '#377A98',
+    marginTop: 210,
+    marginLeft: 30,
+  },
+  relogio: {
+    display: 'flex',
+    justifyContent: 'center',
+    marginLeft: 35,
+    marginTop: 10,
+  },
+  bananinha: {
+    display: 'flex',
+    justifyContent: 'center',
+    marginLeft: 200,
+    marginTop: -230,
+    
   },
 });
