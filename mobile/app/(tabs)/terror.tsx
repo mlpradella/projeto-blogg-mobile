@@ -14,7 +14,14 @@ export default function HomeScreen() {
         style={styles.newImageStyle}
         />
          <ThemedText type="title" style={styles.teste222}>o filme e muito bom, uma das minhas franquias de filmes favorita, eu amo esse tipo de filme de terror religioso mas acho que mesmo sem gostar, todo mundo deveria ver esse filme, a trilha sonora e o suspense antes do susto sao os seus pontos altos  </ThemedText >
-         <div style={styles.teste3}>
+         <div style={styles.teste4}>
+         <Image
+        source={require('@/assets/images/blabs.png')}
+        style={styles.teste3}
+        />
+         </div>
+
+         <div style={styles.teste4}>
          <Image
         source={require('@/assets/images/14.png')}
         style={styles.teste3}
@@ -85,5 +92,10 @@ const styles = StyleSheet.create({
     height: 50,
     marginTop: -110,
     
+  },
+  teste4: {
+display:'flex',
+width: 'auto',
+height: 'auto'
   },
 });
