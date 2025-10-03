@@ -13,15 +13,24 @@ export default function HomeScreen() {
         </ThemedView>
 
         <View style={styles.filmeimagem}>
-          <ThemedText style={styles.filmetitulo}>
-            <ThemedText type='subtitle' style={styles.filme1}>A Noiva Cadáver</ThemedText>
-          </ThemedText>
-          <Image
-            source={require('@/assets/images/noiva-cadaver.png')}
-            style={styles.imagem}
-            contentFit="cover"
-          />
-        </View>
+  {/* Subtítulo separado */}
+  <ThemedText style={styles.filmetitulo}>
+    <ThemedText type='default' style={[styles.filme1, { fontSize: 19 }]}>A Noiva Cadáver</ThemedText>
+  </ThemedText>
+  <View style={styles.horizontal}>
+    <Image
+      source={require('@/assets/images/noiva-cadaver.png')}
+      style={styles.imagem}
+      contentFit="cover"
+    />
+    <Image
+      source={require('@/assets/images/noivacadaver-avaliacao.png')}
+      style={styles.avaliacao1}
+      contentFit="cover"
+    />
+  </View>
+</View>
+
 
         <ThemedText type='default' style={styles.opiniao1}>
           Gosto muito da animação e história geral do filme, o final não 
@@ -36,7 +45,7 @@ export default function HomeScreen() {
 
         <View style={styles.filmeimagem2}>
           <ThemedText style={styles.filmetitulo2}>
-            <ThemedText type='default' style={styles.filme2}>Valente</ThemedText>
+          <ThemedText type='default' style={[styles.filme1, { fontSize: 19 }]}>Valente</ThemedText>
           </ThemedText>
           <Image
             source={require('@/assets/images/valente.png')}
@@ -44,6 +53,15 @@ export default function HomeScreen() {
             contentFit="cover"
           />
         </View>
+        <ThemedText type='default' style={styles.opiniao2}>
+        Este filme tem uma trama interessante que quebra a visão de 
+        normalidade; princesas na grande maioria das vezes são postas 
+        como frágeis e indefesas, Merida faz o contrário dos clichês.
+        É extremamente satisfatório ver uma mulher tomando frente da própria 
+        vida e decisões, mesmo que em uma animação. Erros e problemas acontecem 
+        nesse meio, mas isso não a impede de seguir em frente e lidar com eles 
+        de seu próprio jeito.
+        </ThemedText>
       </ScrollView>
     </SafeAreaView>
   );
@@ -64,49 +82,70 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     backgroundColor: '#00002B',
   },
+
   titulo: {
     color: '#AB51DF',
-    fontSize: 24,
+    fontSize: 27,
     fontWeight: 'bold',
     fontFamily: 'ui-sans-serif',
     backgroundColor: '#00002B',
   },
-  filmeimagem: {
-    paddingLeft: 20,
-    gap: 15,
-  },
   filmetitulo: {
     marginBottom: -5,
-    paddingLeft: 25,
+    paddingLeft: 16,
   },
+  filmetitulo2: {
+    marginBottom: -5,
+    paddingLeft: 49,
+},
+
   filme1: {
     color: '#D85CFC',
     fontFamily: 'ui-sans-serif',
   },
+  filme2: {
+    color: '#D85CFC',
+    fontFamily: 'ui-sans-serif',
+  },
+
   opiniao1: {
     color: '#CF94EC',
     fontFamily: 'ui-sans-serif',
     paddingHorizontal: 20,
     paddingVertical: 10,
   },
-  filmeimagem2: {
-    paddingLeft: 20,
-    gap: 15,
-    marginTop: 20,
-  },
-  filmetitulo2: {
-    marginBottom: -5,
-    paddingLeft: 50,
-    paddingTop: 15,
-  },
-  filme2: {
-    color: '#D85CFC',
+  opiniao2: {
+    color: '#CF94EC',
     fontFamily: 'ui-sans-serif',
+    paddingHorizontal: 20,
+    paddingVertical: 10,
   },
+
   imagem: {
     width: 160,
     height: 250,
     borderRadius: 10,
     borderColor: '#00002B',
+  },
+  filmeimagem: {
+    paddingLeft: 20,
+    gap: 10,
+  },
+  filmeimagem2: {
+    paddingLeft: 20,
+    gap: 15,
+    marginTop: 20,
+  },
+
+  horizontal: {
+    flexDirection: 'row',
+    gap: 10,
+    alignItems: 'center',
+  },
+
+  avaliacao1: {
+    width: 125,
+    height: 75,
+    marginBottom: 150,
   },
 });
