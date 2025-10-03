@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         gap: 8,
         backgroundColor: '#00002B',
-        paddingTop: 20,
+        paddingTop: -10,
         fontFamily: 'Bungee',
       },
 
