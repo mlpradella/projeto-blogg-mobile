@@ -12,12 +12,12 @@ export default function HomeScreen() {
           <ThemedText type="title" style={styles.titulo}>Animação</ThemedText>
         </ThemedView>
 
-        <View style={styles.filmeimagem}>
-  {/* Subtítulo separado */}
+        <View style={styles.filmeimagem}></View>
   <ThemedText style={styles.filmetitulo}>
     <ThemedText type='default' style={[styles.filme1, { fontSize: 19 }]}>A Noiva Cadáver</ThemedText>
   </ThemedText>
   <View style={styles.horizontal}>
+  <View style={styles.capa1coluna}>
     <Image
       source={require('@/assets/images/noiva-cadaver.png')}
       style={styles.imagem}
@@ -29,9 +29,20 @@ export default function HomeScreen() {
       contentFit="cover"
     />
   </View>
+  <View style={styles.sinopse1coluna}>
+    <ThemedText type='default' style={styles.sinopse1}>
+      As famílias de Victor e Victoria estão arranjando seu 
+      casamento. Nervoso com a cerimônia, Victor vai sozinho 
+      à floresta para ensaiar. No entanto, o que ele pensava 
+      ser um tronco de árvore na verdade é o braço esquelético 
+      de uma noiva que foi assassinada. Convencida que Victor 
+      acabara de lhe pedir a mão em casamento, Emily o leva 
+      para o mundo dos mortos.
+    </ThemedText>
+  </View>
 </View>
 
-
+        
         <ThemedText type='default' style={styles.opiniao1}>
           Gosto muito da animação e história geral do filme, o final não 
           é totalmente esperado pelos espectadores e digo isso por 
@@ -43,16 +54,32 @@ export default function HomeScreen() {
           programas.
         </ThemedText>
 
-        <View style={styles.filmeimagem2}>
-          <ThemedText style={styles.filmetitulo2}>
-          <ThemedText type='default' style={[styles.filme1, { fontSize: 19 }]}>Valente</ThemedText>
-          </ThemedText>
-          <Image
-            source={require('@/assets/images/valente.png')}
-            style={styles.imagem}
-            contentFit="cover"
-          />
+
+        <ThemedText style={styles.filmetitulo2}>
+  <ThemedText type='default' style={[styles.filme2, { fontSize: 19 }]}>Valente</ThemedText>
+</ThemedText>
+
+        <View style={styles.horizontal}>
+          <View style={styles.capa2linha}>
+            <Image
+              source={require('@/assets/images/valente.png')}
+              style={styles.imagem}
+              contentFit="cover"
+            />
+            <Image
+              source={require('@/assets/images/valente-avaliacao.png')}
+              style={styles.avaliacao2}
+              contentFit="cover"
+            />
+          </View>
+
+          <View style={styles.sinopse2coluna}>
+            <ThemedText type='default' style={styles.sinopse2}>
+              A princesa Merida deve seguir os costumes do seu reino e tornar-se rainha ao lado do cavalheiro que conseguir a sua mão durante um torneio de arco e flecha. Porém, a jovem está determinada a trilhar seu próprio caminho e desafia a tradição ancestral.
+            </ThemedText>
+          </View>
         </View>
+
         <ThemedText type='default' style={styles.opiniao2}>
         Este filme tem uma trama interessante que quebra a visão de 
         normalidade; princesas na grande maioria das vezes são postas 
@@ -92,11 +119,12 @@ const styles = StyleSheet.create({
   },
   filmetitulo: {
     marginBottom: -5,
-    paddingLeft: 16,
+    paddingLeft: 22,
   },
   filmetitulo2: {
     marginBottom: -5,
     paddingLeft: 49,
+    marginTop: 15,
 },
 
   filme1: {
@@ -106,6 +134,20 @@ const styles = StyleSheet.create({
   filme2: {
     color: '#D85CFC',
     fontFamily: 'ui-sans-serif',
+  },
+
+  sinopse1:{
+    color: '#CF94EC',
+    fontSize: 13,
+    maxWidth: 190,
+    lineHeight: 15,
+    fontFamily: 'ui-sans-serif',
+    marginLeft: -125,
+  },
+  sinopse1coluna:{
+    flex: 1,
+    justifyContent: 'flex-start',
+    marginTop: 87,
   },
 
   opiniao1: {
@@ -136,16 +178,47 @@ const styles = StyleSheet.create({
     gap: 15,
     marginTop: 20,
   },
-
-  horizontal: {
-    flexDirection: 'row',
-    gap: 10,
-    alignItems: 'center',
-  },
-
   avaliacao1: {
     width: 125,
     height: 75,
     marginBottom: 150,
+  },
+
+  capa1coluna:{
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    paddingTop: 12,
+    paddingLeft: 12,
+  },
+  horizontal:{
+    flexDirection: 'row',
+    gap: 10,
+    alignItems: 'flex-start',
+  },
+
+  capa2linha:{
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    paddingTop: 12,
+    paddingLeft: 12,
+  },
+  avaliacao2:{
+    width: 125,
+    height: 80,
+    marginTop: 10,
+  },
+  sinopse2coluna:{
+    flex: 1,
+    justifyContent: 'flex-start',
+    marginTop: 100,
+  },
+  sinopse2:{
+      color: '#CF94EC',
+      fontSize: 13,
+      maxWidth: 180,
+      lineHeight: 15,
+      fontFamily: 'ui-sans-serif',
+      marginLeft: -125,
+      marginTop:10,
   },
 });
