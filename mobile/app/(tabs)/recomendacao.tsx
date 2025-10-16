@@ -23,15 +23,8 @@ export default function HomeScreen() {
         <ThemedText type="subtitle" style={styles.topico}>ROMANCE</ThemedText >
 </ThemedView>
 
-
-
-
 <ThemedView style={styles.im}>
   
-
-   
-
-
         <Image
  source={require('@/assets/images/antesdoamanecer 1.png')}
  style={styles.newImageStyle}
@@ -39,19 +32,23 @@ export default function HomeScreen() {
     <ThemedText type='subtitle' style={styles.nome}>Antes do Amanhecer</ThemedText>
  </ThemedView>
 
-
  <Image 
     source={require('@/assets/images/Vector (2).png')}
     style={styles.see}/>
+<ThemedText type='subtitle' style={styles.nota}>5.0 estrelas</ThemedText>
 
+<Image source={require('@/assets/images/rl.png')}
+style={styles.relogio}/>
+<ThemedText type='subtitle' style={styles.tempo}>1h45min</ThemedText>
 
     <Image 
     source={require('@/assets/images/12.png')}
     style={styles.clas}/>
        
         <ThemedText type='subtitle' style={styles.texto}>Sinto que nunca vi o amor ser retratado de forma tão pura, sincera e carinhosa, falando sobre paixão, conversa e segurança. Não é apenas sobre um romance jovem, é sobre conversar sobre nada e tudo ao mesmo tempo, é ter diálogo, paciência, ter conversas profundas andando nas ruas de Vienna, sobre se conhecer, compartilhar e aproveitar os momentos. O primeiro filme mudou a química do meu cérebro, ver eles apenas conversando e falando sobre a vida, o amor, a morte, sobre banalidades do cotidiano, e apenas aproveitando a companhia um do outro me fez tão bem que não sei como colocar em palavras.</ThemedText>
+        <ThemedText type='subtitle' style={styles.data}>23/08/2025</ThemedText>
 
-        
+    <ThemedText type='title'style={styles.terror}>TERROR</ThemedText>
 
 
     </View>
@@ -106,9 +103,9 @@ opniao: {
 
 clas: {
   marginRight: 50,
-  width: 30,
-  height: 30,
-  marginTop: -70,
+  width: 27,
+  height: 27,
+  marginTop: -67,
   marginLeft: 400,
   
 
@@ -137,10 +134,43 @@ im: {
   },
 
 see: {
-  width: 20,
-  height: 20,
+  width: 19,
+  height: 19,
   marginRight: 75,
-}
+},
+
+nota: {
+  marginLeft: 30,
+  marginTop: -24,
+  fontSize: 12,
+},
+
+relogio: {
+  width: 19,
+  height: 19,
+  marginRight: -150,
+  marginTop: -25,
+},
+
+tempo: {
+  marginLeft: 250,
+  marginTop: -25,
+  fontSize: 12,
+},
+
+data:{
+  marginTop: 30,
+  fontSize: 12,
+  marginLeft: '80%'
+},
+
+terror: {
+    color: '#FF3860',
+    fontSize: 20,
+    backgroundColor: '#00002B',
+    marginRight: '75%'
+},
+
 
 
   });
