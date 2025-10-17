@@ -1,5 +1,5 @@
 import { Image } from 'expo-image';
-import { ScrollView, StyleSheet, View } from 'react-native'; // Adicionado ScrollView
+import { ScrollView, StyleSheet, View } from 'react-native';
 
 import { ThemedText } from '@/components/themed-text';
 
@@ -30,10 +30,10 @@ export default function HomeScreen() {
 
           <View style={styles.starsAndScoreRow}>
             <View style={styles.starsContainer}>
-                <Image source={require('@/assets/images/Vector.png')} style={styles.starImage} />
-                <Image source={require('@/assets/images/Vector.png')} style={styles.starImage} />
-                <Image source={require('@/assets/images/Vector.png')} style={styles.starImage} />
-                <Image source={require('@/assets/images/Vector.png')} style={styles.starImage} />
+                <Image source={require('@/assets/images/estrela.png')} style={styles.starImage} />
+                <Image source={require('@/assets/images/estrela.png')} style={styles.starImage} />
+                <Image source={require('@/assets/images/estrela.png')} style={styles.starImage} />
+                <Image source={require('@/assets/images/estrela.png')} style={styles.starImage} />
                 <Image source={require('@/assets/images/group.png')} style={styles.starImage} /> 
             </View>
             <ThemedText type="subtitle" style={styles.scoreText}>4.5</ThemedText>
@@ -67,6 +67,36 @@ export default function HomeScreen() {
         <ThemedText style={styles.directorFilmText}> Stephen Chbosky.</ThemedText>
       </View>
 
+
+      <ThemedText type="subtitle" style={styles.movieTitle1}>Sociedade dos poetas mortos </ThemedText>
+
+      <View style={styles.posterColumn1}>
+          <Image
+            source={require('@/assets/images/sociedade.png')}
+            style={styles.posterImage1}
+          />
+        </View>
+
+        <View style={styles.ratingRow1}>
+            <Image source={require('@/assets/images/12.png')} style={styles.ageRatingImage} />
+            <ThemedText type="defaultSemiBold" style={styles.yearText}>1990</ThemedText>
+          </View>
+
+          <View style={styles.starsAndScoreRow1}>
+            <View style={styles.starsContainer}>
+                <Image source={require('@/assets/images/estrela.png')} style={styles.starImage} />
+                <Image source={require('@/assets/images/estrela.png')} style={styles.starImage} />
+                <Image source={require('@/assets/images/estrela.png')} style={styles.starImage} />
+                <Image source={require('@/assets/images/estrela.png')} style={styles.starImage} />
+                <Image source={require('@/assets/images/group.png')} style={styles.starImage} /> 
+            </View>
+            <ThemedText type="subtitle" style={styles.scoreText}>4.7</ThemedText>
+          </View>
+
+          <View style={styles.durationRow1}>
+            <Image source={require('@/assets/images/relogio.png')} style={styles.durationIcon} />
+            <ThemedText type="defaultSemiBold" style={styles.durationText}>2h 8min</ThemedText>
+          </View>
     </ScrollView>
   );
 }
@@ -93,7 +123,12 @@ const styles = StyleSheet.create({
     marginLeft: 20,
     fontSize: 22,
   },
-
+  movieTitle1: {
+    color: '#377A98',
+    marginTop: 50,
+    marginLeft: 20,
+    fontSize: 22,
+  },
   posterAndDetailsRow: {
     flexDirection: 'row', 
     marginTop: 10,
@@ -103,9 +138,20 @@ const styles = StyleSheet.create({
   posterColumn: {
     flex: 0.45, 
   },
+
+  posterColumn1: {
+    flex: 0.45, 
+    marginTop: 30,
+  },
   posterImage: {
     width: '100%',
     height: 250,
+    resizeMode: 'contain',
+  },
+
+  posterImage1: {
+    width: '50%',
+    height: 230,
     resizeMode: 'contain',
   },
 
@@ -118,6 +164,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 5,
+  },
+  ratingRow1: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 5,
+    marginLeft: 185,
+    marginTop: -100,
   },
   ageRatingImage: {
     width: 30,
@@ -132,6 +185,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 5,
+  },
+  starsAndScoreRow1: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 5,
+    marginLeft: 185,
+    marginTop: 5,
   },
   starsContainer: {
     flexDirection: 'row',
@@ -149,6 +209,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginTop: 5,
+  },
+  durationRow1: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 5,
+    marginLeft: 185,
   },
   durationIcon: {
     width: 20,
@@ -172,7 +238,7 @@ const styles = StyleSheet.create({
  
   reviewTitle: {
     color: '#377A98',
-    marginTop: 20,
+    marginTop: -10,
     marginLeft: 20,
   },
   reviewBody: {

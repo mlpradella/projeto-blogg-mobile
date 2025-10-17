@@ -1,10 +1,13 @@
 import { Image } from 'expo-image';
-import { StyleSheet, View, } from 'react-native';
+import { SafeAreaView, StyleSheet, View } from 'react-native';
 
 import { ThemedText } from '@/components/themed-text';
+import { ScrollView } from 'react-native-gesture-handler';
 
 export default function HomeScreen() {
   return (
+    <SafeAreaView style={styles.container}>
+      <ScrollView contentContainerStyle={styles.scrollContent}>
     <View style={styles.container}>
       
         <ThemedText type="title" style={styles.teste2}>TERROR</ThemedText >
@@ -40,13 +43,15 @@ export default function HomeScreen() {
        </ThemedText>
 
        </div>
-       <div style={styles.linha}>
        <Image
-        source={require('@/assets/images/linha.png')} 
-        style={styles.newImageStyle3}
+        source={require('@/assets/images/anabeli.png')} 
+        style={styles.newImageStyle4}
       />
-       </div>
+      
     </View>
+    </ScrollView>
+       </SafeAreaView> 
+
   
   );
 }
@@ -145,8 +150,13 @@ marginLeft: 180,
 marginTop: 80,
 fontFamily: 'ui-sans-serif',
   },
-  linha:{
-height: 300,
-  },
+  newImageStyle4:{
+    height: 250, 
+    width: 150,
+    marginTop: 900,
+    },
 
+  scrollContent: {
+
+  },
 });

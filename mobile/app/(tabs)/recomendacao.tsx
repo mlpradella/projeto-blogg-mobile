@@ -1,5 +1,5 @@
 import { Image } from 'expo-image';
-import { Platform, StyleSheet, View } from 'react-native';
+import { Platform, StyleSheet, View,  } from 'react-native';
 
 import { HelloWave } from '@/components/hello-wave';
 import ParallaxScrollView from '@/components/parallax-scroll-view';
@@ -23,22 +23,32 @@ export default function HomeScreen() {
         <ThemedText type="subtitle" style={styles.topico}>ROMANCE</ThemedText >
 </ThemedView>
 
-
 <ThemedView style={styles.im}>
-<Image 
-source={require('@/assets/images/12.png')}
-    style={styles.clas}/>
-
-</ThemedView>
-
-
+  
         <Image
  source={require('@/assets/images/antesdoamanecer 1.png')}
  style={styles.newImageStyle}
  />
-        <ThemedText type='subtitle' style={styles.texto}>Sinto que nunca vi o amor ser retratado de forma tão pura, sincera e carinhosa, falando sobre paixão, conversa e segurança. Não é apenas sobre um romance jovem, é sobre conversar sobre nada e tudo ao mesmo tempo, é ter diálogo, paciência, ter conversas profundas andando nas ruas de Vienna, sobre se conhecer, compartilhar e aproveitar os momentos. O primeiro filme mudou a química do meu cérebro, ver eles apenas conversando e falando sobre a vida, o amor, a morte, sobre banalidades do cotidiano, e apenas aproveitando a companhia um do outro me fez tão bem que não sei como colocar em palavras.</ThemedText>
+    <ThemedText type='subtitle' style={styles.nome}>Antes do Amanhecer</ThemedText>
+ </ThemedView>
 
-        
+ <Image 
+    source={require('@/assets/images/Vector (2).png')}
+    style={styles.see}/>
+<ThemedText type='subtitle' style={styles.nota}>5.0 estrelas</ThemedText>
+
+<Image source={require('@/assets/images/rl.png')}
+style={styles.relogio}/>
+<ThemedText type='subtitle' style={styles.tempo}>1h45min</ThemedText>
+
+    <Image 
+    source={require('@/assets/images/12.png')}
+    style={styles.clas}/>
+       
+        <ThemedText type='subtitle' style={styles.texto}>Sinto que nunca vi o amor ser retratado de forma tão pura, sincera e carinhosa, falando sobre paixão, conversa e segurança. Não é apenas sobre um romance jovem, é sobre conversar sobre nada e tudo ao mesmo tempo, é ter diálogo, paciência, ter conversas profundas andando nas ruas de Vienna, sobre se conhecer, compartilhar e aproveitar os momentos. O primeiro filme mudou a química do meu cérebro, ver eles apenas conversando e falando sobre a vida, o amor, a morte, sobre banalidades do cotidiano, e apenas aproveitando a companhia um do outro me fez tão bem que não sei como colocar em palavras.</ThemedText>
+        <ThemedText type='subtitle' style={styles.data}>23/08/2025</ThemedText>
+
+    <ThemedText type='title'style={styles.terror}>TERROR</ThemedText>
 
 
     </View>
@@ -57,6 +67,7 @@ const styles = StyleSheet.create({
   stepContainer: {
     gap: 8,
     marginBottom: 8,
+    backgroundColor: '#00002B'
   },
   reactLogo: {
     height: 178,
@@ -72,41 +83,95 @@ const styles = StyleSheet.create({
 
 opniao: {
   marginLeft: -300,
+  color: '#FF3860',
+  
 },
    
   topico: {
     color: '#FF3860',
     fontSize: 20,
+    backgroundColor: '#00002B',
     marginLeft: 10,
   },
 
   texto: {
-    fontSize: 12,
-    color: 'white'
+    fontSize: 10,
+    color: 'white',
+    marginLeft: 150,
+    marginTop: 25,
   },
 
 clas: {
   marginRight: 50,
-  width: 30,
-  height: 30,
+  width: 27,
+  height: 27,
+  marginTop: -67,
+  marginLeft: 400,
   
 
 },
 
 im: {
-  marginTop: -20,
-   backgroundColor: '#00002B'
+  marginTop: 20,
+   backgroundColor: '#00002B',
+   alignContent: 'center',
+  },
+  
+  newImageStyle: {
+    width: '100%',
+    height: 200,
+    resizeMode: 'contain',
+    marginTop: 5,
+    marginLeft: -136,
+    
+  },
+  
+  nome: {
+    color: '#FF3860',
+    fontSize: 20,
+    marginTop: -200,
+    marginLeft: 100,
+  },
+
+see: {
+  width: 19,
+  height: 19,
+  marginRight: 75,
 },
 
-newImageStyle: {
-   width: '100%',
-   height: 200,
-   resizeMode: 'contain',
-   marginTop: 5,
-   marginLeft: -270,
-   
-    },
+nota: {
+  marginLeft: 30,
+  marginTop: -24,
+  fontSize: 12,
+},
+
+relogio: {
+  width: 19,
+  height: 19,
+  marginRight: -150,
+  marginTop: -25,
+},
+
+tempo: {
+  marginLeft: 250,
+  marginTop: -25,
+  fontSize: 12,
+},
+
+data:{
+  marginTop: 30,
+  fontSize: 12,
+  marginLeft: '80%'
+},
+
+terror: {
+    color: '#FF3860',
+    fontSize: 20,
+    backgroundColor: '#00002B',
+    marginRight: '75%'
+},
+
+
+
   });
-
-
 

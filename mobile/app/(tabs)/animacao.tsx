@@ -89,6 +89,50 @@ export default function HomeScreen() {
         nesse meio, mas isso não a impede de seguir em frente e lidar com eles 
         de seu próprio jeito.
         </ThemedText>
+
+        <ThemedText style={styles.filmetitulo3}>
+  <ThemedText type='default' style={[styles.filme3, { fontSize: 19 }]}>Ponyo</ThemedText>
+</ThemedText>
+
+        <View style={styles.horizontal}>
+          <View style={styles.capa3linha}>
+            <Image
+              source={require('@/assets/images/ponyo.png')}
+              style={styles.imagem}
+              contentFit="cover"
+            />
+            <Image
+              source={require('@/assets/images/ponyo-avaliacao.png')}
+              style={styles.avaliacao3}
+              contentFit="cover"
+            />
+          </View>
+
+          <View style={styles.sinopse3coluna}>
+            <ThemedText type='default' style={styles.sinopse3}>
+            O garoto Sousuke encontra um peixinho dourado preso em 
+            uma garrafa e decide libertá-lo, sem saber que se trata 
+            da deusa do mar Ponyo. Filha de um poderoso mago, ela 
+            se comove com a atitude do menino e usa a magia do pai 
+            para se transformar em humana. Porém, a substância de 
+            sua poção mágica pode colocar em risco o vilarejo onde 
+            mora o menino.
+            </ThemedText>
+          </View>
+        </View>
+
+        <ThemedText type='default' style={styles.opiniao3}>
+        Mesmo sendo um filme relativamente antigo, a animação e 
+        a história são muito boas. Os personagens são inocentes 
+        e fofos, mesmo assim entregando certa mensagem para o 
+        público que assistiu.
+        A animação possui momentos de conflitos e reconciliação, 
+        em que a amizade que ambos tiveram é “posta a prova” para 
+        salvarem o vilarejo.
+        A ideia principal é muito interessante por se tratar de 
+        algo não visto ou pensado normalmente, tendo em base um 
+        peixinho dourado que se transforma em uma humana.
+        </ThemedText>
       </ScrollView>
     </SafeAreaView>
   );
@@ -109,7 +153,6 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     backgroundColor: '#00002B',
   },
-
   titulo: {
     color: '#AB51DF',
     fontSize: 27,
@@ -117,25 +160,42 @@ const styles = StyleSheet.create({
     fontFamily: 'ui-sans-serif',
     backgroundColor: '#00002B',
   },
+  horizontal:{
+    flexDirection: 'row',
+    gap: 10,
+    alignItems: 'flex-start',
+  },
+  imagem: {
+    width: 160,
+    height: 250,
+    borderRadius: 10,
+    borderColor: '#00002B',
+  },
+  filmeimagem: {
+    paddingLeft: 20,
+    gap: 10,
+  },
+
+
   filmetitulo: {
     marginBottom: -5,
     paddingLeft: 22,
   },
-  filmetitulo2: {
-    marginBottom: -5,
-    paddingLeft: 49,
-    marginTop: 15,
-},
-
   filme1: {
     color: '#D85CFC',
     fontFamily: 'ui-sans-serif',
   },
-  filme2: {
-    color: '#D85CFC',
-    fontFamily: 'ui-sans-serif',
+  avaliacao1: {
+    width: 125,
+    height: 75,
+    marginBottom: 150,
   },
-
+  capa1coluna:{
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    paddingTop: 12,
+    paddingLeft: 12,
+  },
   sinopse1:{
     color: '#CF94EC',
     fontSize: 13,
@@ -149,58 +209,33 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     marginTop: 87,
   },
-
   opiniao1: {
     color: '#CF94EC',
     fontFamily: 'ui-sans-serif',
     paddingHorizontal: 20,
     paddingVertical: 10,
   },
-  opiniao2: {
-    color: '#CF94EC',
-    fontFamily: 'ui-sans-serif',
-    paddingHorizontal: 20,
-    paddingVertical: 10,
-  },
 
-  imagem: {
-    width: 160,
-    height: 250,
-    borderRadius: 10,
-    borderColor: '#00002B',
-  },
-  filmeimagem: {
-    paddingLeft: 20,
-    gap: 10,
-  },
-  filmeimagem2: {
-    paddingLeft: 20,
-    gap: 15,
-    marginTop: 20,
-  },
-  avaliacao1: {
-    width: 125,
-    height: 75,
-    marginBottom: 150,
-  },
-
-  capa1coluna:{
-    flexDirection: 'row',
-    alignItems: 'flex-start',
-    paddingTop: 12,
-    paddingLeft: 12,
-  },
-  horizontal:{
-    flexDirection: 'row',
-    gap: 10,
-    alignItems: 'flex-start',
-  },
 
   capa2linha:{
     flexDirection: 'row',
     alignItems: 'flex-start',
     paddingTop: 12,
     paddingLeft: 12,
+  },
+  filmetitulo2: {
+    marginBottom: -5,
+    paddingLeft: 60,
+    marginTop: 15,
+  },
+  filme2: {
+    color: '#D85CFC',
+    fontFamily: 'ui-sans-serif',
+  },
+  filmeimagem2: {
+    paddingLeft: 20,
+    gap: 15,
+    marginTop: 20,
   },
   avaliacao2:{
     width: 125,
@@ -220,5 +255,58 @@ const styles = StyleSheet.create({
       fontFamily: 'ui-sans-serif',
       marginLeft: -125,
       marginTop:10,
+  },
+  opiniao2: {
+    color: '#CF94EC',
+    fontFamily: 'ui-sans-serif',
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+  },
+
+
+  filmetitulo3: {
+    marginBottom: -5,
+    paddingLeft: 68,
+    marginTop: 15,
+  },
+  capa3linha:{
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    paddingTop: 12,
+    paddingLeft: 12,
+  },
+  filmeimagem3: {
+    paddingLeft: 20,
+    gap: 15,
+    marginTop: 20,
+  },
+  filme3: {
+    color: '#D85CFC',
+    fontFamily: 'ui-sans-serif',
+  },
+  avaliacao3:{
+    width: 125,
+    height: 80,
+    marginTop: 3,
+  },
+  sinopse3coluna:{
+    flex: 1,
+    justifyContent: 'flex-start',
+    marginTop: 88,
+  },
+  sinopse3:{
+      color: '#CF94EC',
+      fontSize: 13,
+      maxWidth: 180,
+      lineHeight: 15,
+      fontFamily: 'ui-sans-serif',
+      marginLeft: -125,
+      marginTop:10,
+  },
+  opiniao3: {
+    color: '#CF94EC',
+    fontFamily: 'ui-sans-serif',
+    paddingHorizontal: 20,
+    paddingVertical: 10,
   },
 });

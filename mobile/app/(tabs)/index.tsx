@@ -2,10 +2,10 @@ import React from 'react';
 import { Image, StyleSheet, View } from 'react-native';
 import { useSharedValue } from 'react-native-reanimated';
 import Carousel from 'react-native-reanimated-carousel';
-
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { window } from '@/constants/sizes';
+
 
 // Substitua com suas URLs de imagem
 const imageData = [
@@ -38,13 +38,15 @@ export default function HomeScreen() {
         <ThemedText type="subtitle">new blog!</ThemedText>
         <ThemedText type="title" style={styles.fonte}>POCSCAST</ThemedText>
         <ThemedText type="subtitle">MOVIES</ThemedText>
+        <ThemedText type="subtitle" style={styles.subtitulo}>principais destaques</ThemedText>
       </ThemedView>
+      
 
       <View style={styles.carouselContainer}>
         <Carousel
           autoPlayInterval={2000}
           data={imageData}
-          height={258}
+          height={550}
           loop={true}
           pagingEnabled={true}
           snapEnabled={true}
@@ -52,7 +54,7 @@ export default function HomeScreen() {
           style={{ width: window.width }}
           mode="parallax"
           modeConfig={{
-            parallaxScrollingScale: 0.9,
+            parallaxScrollingScale: 0.75,
             parallaxScrollingOffset: 50,
           }}
           onProgressChange={progress}
@@ -60,10 +62,17 @@ export default function HomeScreen() {
         />
       </View>
     </View>
+
   );
 }
 
+
+
 const styles = StyleSheet.create({
+  subtitulo: {
+    marginTop:12,
+    fontSize:15,
+  },
   fonte: {
     fontFamily: 'ui-sans-serif'
   },
@@ -73,10 +82,10 @@ const styles = StyleSheet.create({
   },
   titleContainer: {
     alignItems: 'center',
-    gap: 8,
+    gap: 0,
     backgroundColor: '#00002b',
     fontFamily: 'ui-sans-serif',
-    paddingVertical: 20,
+    paddingVertical: 1,
   },
   carouselContainer: {
     flex: 1,
@@ -85,8 +94,8 @@ const styles = StyleSheet.create({
   },
   card: {
     flex: 1,
-    marginHorizontal: 8,
-    borderRadius: 12,
+    marginHorizontal: 15,
+    borderRadius: 15,
     overflow: "hidden",
     shadowColor: "#000",
     shadowOffset: {
@@ -100,7 +109,7 @@ const styles = StyleSheet.create({
   image: {
     width: "100%",
     height: "100%",
-    borderRadius: 12,
+    borderRadius: 15,
   },
   stepContainer: {
     gap: 8,
