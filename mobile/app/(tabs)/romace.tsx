@@ -24,6 +24,11 @@ export default function HomeScreen() {
                   style={styles.newImageStyle}
                   />
 
+                  <Image
+                  source={require('@/assets/images/informacoes-simplismente.jpg')}
+                  style={styles.informacoesSimp}
+                  />
+
           <ThemedView style={styles.texto}>
             <ThemedText style={styles.opiniao}
           type='default'>A história é até interessante, algumas pessoas podem achar o enredo um pouco previsível para o gênero, mas o filme se destaca por não cair em todos os clichês. 
@@ -75,6 +80,7 @@ const styles = StyleSheet.create({
       opiniao: {
         fontSize:16,
         marginLeft: 10, 
+        marginTop: 35,
       },  
 
       scrollContent:{
@@ -83,11 +89,21 @@ const styles = StyleSheet.create({
       },
 
       newImageStyle:{
-         height: 250,
-        width: 'auto', 
+        height: 270,
+        width: 150 , 
         resizeMode: 'contain',
         paddingTop: 5, 
-        marginLeft: -100,
+        marginLeft: 10,
+        alignItems: 'flex-start',
+      },
+
+       informacoesSimp: {
+        height: 290,
+        width: 120,
+        resizeMode:'contain',
+        marginLeft: 190,
+        marginTop: -310,
+        alignItems: 'flex-start',
       },
 
     })
