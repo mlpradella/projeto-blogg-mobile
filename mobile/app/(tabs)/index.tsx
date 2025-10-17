@@ -6,25 +6,24 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { window } from '@/constants/sizes';
 
-
-// Substitua com suas URLs de imagem
+// Substituindo URLs externas por imagens locais
 const imageData = [
-  "https://picsum.photos/400/300?random=1",
-  "https://picsum.photos/400/300?random=2",
-  "https://picsum.photos/400/300?random=3",
-  "https://picsum.photos/400/300?random=4",
-  "https://picsum.photos/400/300?random=5",
-  "https://picsum.photos/400/300?random=6",
+  require('@/assets/images/dr.png'), 
+  require('@/assets/images/km.png'), 
+  require('@/assets/images/dr.png'), 
+  require('@/assets/images/km.png'), 
+  require('@/assets/images/dr.png'), 
+  require('@/assets/images/km.png'), 
 ];
 
 export default function HomeScreen() {
   const progress = useSharedValue<number>(0);
 
-  const renderItem = React.useCallback(({ item }: { item: string; index: number }) => {
+  const renderItem = React.useCallback(({ item }: { item: any; index: number }) => {
     return (
       <View style={styles.card}>
         <Image
-          source={{ uri: item }}
+          source={item} // Usando a imagem local
           style={styles.image}
           resizeMode="cover"
         />
@@ -40,7 +39,6 @@ export default function HomeScreen() {
         <ThemedText type="subtitle">MOVIES</ThemedText>
         <ThemedText type="subtitle" style={styles.subtitulo}>principais destaques</ThemedText>
       </ThemedView>
-      
 
       <View style={styles.carouselContainer}>
         <Carousel
@@ -54,7 +52,7 @@ export default function HomeScreen() {
           style={{ width: window.width }}
           mode="parallax"
           modeConfig={{
-            parallaxScrollingScale: 0.75,
+            parallaxScrollingScale: 0.70,
             parallaxScrollingOffset: 50,
           }}
           onProgressChange={progress}
@@ -62,19 +60,16 @@ export default function HomeScreen() {
         />
       </View>
     </View>
-
   );
 }
 
-
-
 const styles = StyleSheet.create({
   subtitulo: {
-    marginTop:12,
-    fontSize:15,
+    marginTop: 12,
+    fontSize: 15,
   },
   fonte: {
-    fontFamily: 'ui-sans-serif'
+    fontFamily: 'ui-sans-serif',
   },
   container: {
     flex: 1,
@@ -96,8 +91,8 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 15,
     borderRadius: 15,
-    overflow: "hidden",
-    shadowColor: "#000",
+    overflow: 'hidden',
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 2,
@@ -107,8 +102,8 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   image: {
-    width: "100%",
-    height: "100%",
+    width: '100%',
+    height: '100%',
     borderRadius: 15,
   },
   stepContainer: {
