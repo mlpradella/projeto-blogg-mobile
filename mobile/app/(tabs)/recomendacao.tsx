@@ -1,17 +1,15 @@
 import { Image } from 'expo-image';
-import { Platform, StyleSheet, View,  } from 'react-native';
+import { ScrollView, SafeAreaView, StyleSheet, View,  } from 'react-native';
 
-import { HelloWave } from '@/components/hello-wave';
-import ParallaxScrollView from '@/components/parallax-scroll-view';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { Link } from 'expo-router';
-import { DefaultTheme } from '@react-navigation/native';
-import { Colors } from '@/constants/theme';
-import { Background } from '@react-navigation/elements';
+
 
 export default function HomeScreen() {
   return (
+
+    <SafeAreaView style={styles.container}>
+      <ScrollView contentContainerStyle={styles.scrollContent}>
     <View style={styles.container}>
 
       <ThemedView style={styles.stepContainer}>
@@ -52,11 +50,32 @@ style={styles.relogio}/>
        style={styles.newImageStyle54}/>
     <ThemedText type='subtitle' style={styles.nomev}>A Vila</ThemedText>
     </ThemedView>
-    
+    <Image source={require('@/assets/images/14v.png')}
+    style={styles.see2}/>
 
+    <Image source={require('@/assets/images/esV.png')}
+    style={styles.see}></Image>
+    <ThemedText type='subtitle' style={styles.nota}>4.0 estrelas</ThemedText>
 
+    <Image source={require('@/assets/images/relV.png')}
+    style={styles.relogio}></Image>
+    <ThemedText type='subtitle' style={styles.tempo}>1h48min</ThemedText>
+
+    <ThemedText type='subtitle' style={styles.texto}>Achei dolorosamente triste, imaginei que seria mais um filme sobre uma comunidade isolada sofrendo com “coisas estranhas estão acontecendo”, mas fui surpreedida com um filme que fala sobre os perigos de negar coletivamente a realidade do sofrimento e construir uma mitologia enganosa para um suposto “bem maior”. A dor é uma parte natural do progresso, e a verdadeira fé seria permitir que as pessoas descobrissem isso por si mesmas.</ThemedText>
+    <ThemedText type='subtitle' style={styles.data}>18/04/2025</ThemedText>
+
+  <ThemedText type='title' style={styles.acao}>Ação</ThemedText>
+
+  <ThemedView style={styles.im}>
+    <Image source={require('@/assets/images/old.png')}
+    style={styles.newImageStyle545}></Image>
+
+  </ThemedView>
 
     </View>
+
+    </ScrollView>
+    </SafeAreaView>
   );
 }
 
@@ -102,8 +121,9 @@ opniao: {
   texto: {
     fontSize: 10,
     color: 'white',
-    marginLeft: 150,
+    marginLeft: 180,
     marginTop: 25,
+    marginRight: 32,
   },
 
 clas: {
@@ -173,7 +193,7 @@ terror: {
     color: '#A22020',
     fontSize: 20,
     backgroundColor: '#00002B',
-    marginRight: '75%'
+    marginRight: '67%'
 },
 
 imvila: {
@@ -197,5 +217,37 @@ nomev: {
   marginLeft: 186,
 },
 
+see2: {
+  width: 19,
+  height: 19,
+  marginLeft: 65,
+  marginTop: -30,
+},
+
+acao: {
+  color: '#519548',
+  fontSize: 20,
+  backgroundColor: '#00002B',
+  marginRight: '73%'
+},
+
+newImageStyle545: {
+  width: 200,
+  height: 200,
+  resizeMode: 'contain',
+  marginTop: -5,
+  marginRight: 266,
+},
+
+
+
+
+
+
+
+
+scrollContent: {
+  
+},
   });
 
