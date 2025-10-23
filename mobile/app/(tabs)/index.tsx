@@ -1,34 +1,36 @@
 import React from 'react';
-import { Image, StyleSheet, View } from 'react-native';
+import { Image, StyleSheet, View, TouchableOpacity } from 'react-native';
 import { useSharedValue } from 'react-native-reanimated';
 import Carousel from 'react-native-reanimated-carousel';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { window } from '@/constants/sizes';
+import { useRouter } from 'expo-router'; // 👈 Importa o roteador
 
-// Substituindo URLs externas por imagens locais
+// Imagens locais
 const imageData = [
-  require('@/assets/images/verde.png'), 
-  require('@/assets/images/roxo.png'), 
-  require('@/assets/images/azul.png'), 
-  require('@/assets/images/rosa.webp'), 
-  require('@/assets/images/vermelho.png'), 
+  { src: require('@/assets/images/verde.png'), route: '/(tabs)/acao' },
+  { src: require('@/assets/images/roxo.png'), route: '/(tabs)/animacao' },
+  { src: require('@/assets/images/azul.png'), route: '/(tabs)/drama' },
+  { src: require('@/assets/images/rosa.webp'), route: '/(tabs)/romace' },
+  { src: require('@/assets/images/vermelho.png'), route: '/(tabs)/terror' },
 ];
 
 export default function HomeScreen() {
   const progress = useSharedValue<number>(0);
+  const router = useRouter(); // 👈 Inicializa o roteador
 
   const renderItem = React.useCallback(({ item }: { item: any; index: number }) => {
     return (
-      <View style={styles.card}>
-        <Image
-          source={item} // Usando a imagem local
-          style={styles.image}
-          resizeMode="cover"
-        />
-      </View>
+      <TouchableOpacity
+        style={styles.card}
+        activeOpacity={0.8}
+        onPress={() => router.push(item.route)} // 👈 Navega para a rota
+      >
+        <Image source={item.src} style={styles.image} resizeMode="cover" />
+      </TouchableOpacity>
     );
-  }, []);
+  }, [router]);
 
   return (
     <View style={styles.container}>
@@ -44,14 +46,14 @@ export default function HomeScreen() {
           autoPlayInterval={2000}
           data={imageData}
           height={550}
-          loop={true}
-          pagingEnabled={true}
-          snapEnabled={true}
+          loop
+          pagingEnabled
+          snapEnabled
           width={window.width}
           style={{ width: window.width }}
           mode="parallax"
           modeConfig={{
-            parallaxScrollingScale: 0.70,
+            parallaxScrollingScale: 0.7,
             parallaxScrollingOffset: 50,
           }}
           onProgressChange={progress}
@@ -76,9 +78,7 @@ const styles = StyleSheet.create({
   },
   titleContainer: {
     alignItems: 'center',
-    gap: 0,
     backgroundColor: '#00002b',
-    fontFamily: 'ui-sans-serif',
     paddingVertical: 1,
   },
   carouselContainer: {
@@ -88,14 +88,11 @@ const styles = StyleSheet.create({
   },
   card: {
     flex: 1,
-    marginHorizontal: 40,
+    marginHorizontal: 20,
     borderRadius: 15,
     overflow: 'hidden',
     shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
+    shadowOffset: { width: 2, height: 2 },
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5,
@@ -104,16 +101,5 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
     borderRadius: 15,
-  },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
-  },
-  reactLogo: {
-    height: 0,
-    width: 0,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
   },
 });
