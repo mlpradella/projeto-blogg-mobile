@@ -1,13 +1,12 @@
 import React from 'react';
-import { Image, StyleSheet, View, TouchableOpacity } from 'react-native';
+import { Image, StyleSheet, View, TouchableOpacity, Text } from 'react-native';
 import { useSharedValue } from 'react-native-reanimated';
 import Carousel from 'react-native-reanimated-carousel';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { window } from '@/constants/sizes';
-import { useRouter } from 'expo-router'; // 👈 Importa o roteador
+import { useRouter } from 'expo-router';
 
-// Imagens locais
 const imageData = [
   { src: require('@/assets/images/verde.png'), route: '/(tabs)/acao' },
   { src: require('@/assets/images/roxo.png'), route: '/(tabs)/animacao' },
@@ -18,14 +17,14 @@ const imageData = [
 
 export default function HomeScreen() {
   const progress = useSharedValue<number>(0);
-  const router = useRouter(); // 👈 Inicializa o roteador
+  const router = useRouter();
 
   const renderItem = React.useCallback(({ item }: { item: any; index: number }) => {
     return (
       <TouchableOpacity
         style={styles.card}
         activeOpacity={0.8}
-        onPress={() => router.push(item.route)} // 👈 Navega para a rota
+        onPress={() => router.push(item.route)}
       >
         <Image source={item.src} style={styles.image} resizeMode="cover" />
       </TouchableOpacity>
@@ -60,6 +59,20 @@ export default function HomeScreen() {
           renderItem={renderItem}
         />
       </View>
+
+      <View style={styles.recommendationContainer}>
+        <Text style={styles.recommendationText}>
+          Conheça as recomendações da semana :)
+        </Text>
+
+        <TouchableOpacity
+          style={styles.button}
+          activeOpacity={0.8}
+          onPress={() => router.push('/(tabs)/recomendacao')}
+        >
+          <Text style={styles.buttonText}>clique aqui</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 }
@@ -85,6 +98,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    marginTop: 100, 
+    marginBlockEnd:65,
+    
   },
   card: {
     flex: 1,
@@ -101,5 +117,29 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
     borderRadius: 15,
+  },
+  recommendationContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 20, 
+    marginBottom: 40,
+  },
+  recommendationText: {
+    color: '#FFFFFF',
+    fontSize: 16,
+    marginBottom: 10,
+    marginTop:10,
+  },
+  button: {
+    borderWidth: 1,
+    borderColor: '#FFFFFF',
+    borderRadius: 8,
+    paddingVertical: 10,
+    paddingHorizontal: 30,
+  },
+  buttonText: {
+    color: '#FFFFFF',
+    fontSize: 15,
+    textAlign: 'center',
   },
 });
