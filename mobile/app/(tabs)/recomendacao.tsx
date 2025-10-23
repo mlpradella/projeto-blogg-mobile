@@ -25,15 +25,12 @@ export default function HomeScreen() {
 
 <ThemedView style={styles.im}>
   
-        <Image
- source={require('@/assets/images/antesdoamanecer 1.png')}
- style={styles.newImageStyle}
- />
+        <Image source={require('@/assets/images/antesdoamanecer 1.png')}
+ style={styles.newImageStyle}/>
     <ThemedText type='subtitle' style={styles.nome}>Antes do Amanhecer</ThemedText>
  </ThemedView>
 
- <Image 
-    source={require('@/assets/images/Vector (2).png')}
+ <Image source={require('@/assets/images/Vector (2).png')}
     style={styles.see}/>
 <ThemedText type='subtitle' style={styles.nota}>5.0 estrelas</ThemedText>
 
@@ -41,14 +38,22 @@ export default function HomeScreen() {
 style={styles.relogio}/>
 <ThemedText type='subtitle' style={styles.tempo}>1h45min</ThemedText>
 
-    <Image 
-    source={require('@/assets/images/12.png')}
+    <Image source={require('@/assets/images/12.png')}
     style={styles.clas}/>
        
         <ThemedText type='subtitle' style={styles.texto}>Sinto que nunca vi o amor ser retratado de forma tão pura, sincera e carinhosa, falando sobre paixão, conversa e segurança. Não é apenas sobre um romance jovem, é sobre conversar sobre nada e tudo ao mesmo tempo, é ter diálogo, paciência, ter conversas profundas andando nas ruas de Vienna, sobre se conhecer, compartilhar e aproveitar os momentos. O primeiro filme mudou a química do meu cérebro, ver eles apenas conversando e falando sobre a vida, o amor, a morte, sobre banalidades do cotidiano, e apenas aproveitando a companhia um do outro me fez tão bem que não sei como colocar em palavras.</ThemedText>
         <ThemedText type='subtitle' style={styles.data}>23/08/2025</ThemedText>
 
-    <ThemedText type='title'style={styles.terror}>TERROR</ThemedText>
+    
+  <ThemedText type='subtitle'style={styles.terror}>TERROR</ThemedText>
+
+    <ThemedView style={styles.imvila}>
+      <Image source={require('@/assets/images/VILA123.png')}
+       style={styles.newImageStyle54}/>
+    <ThemedText type='subtitle' style={styles.nomev}>A Vila</ThemedText>
+    </ThemedView>
+    
+
 
 
     </View>
@@ -165,13 +170,32 @@ data:{
 },
 
 terror: {
-    color: '#FF3860',
+    color: '#A22020',
     fontSize: 20,
     backgroundColor: '#00002B',
     marginRight: '75%'
 },
 
+imvila: {
+  marginTop: 5,
+   backgroundColor: '#00002B',
+   alignContent: 'center',
+},
 
+newImageStyle54: {
+  width: 200,
+  height: 200,
+  resizeMode: 'contain',
+  marginTop: 10,
+  marginRight: 266,
+},
+
+nomev: {
+  color: '#A22020',
+  fontSize: 20,
+  marginTop: -200,
+  marginLeft: 186,
+},
 
   });
 
