@@ -12,11 +12,13 @@ export default function HomeScreen() {
       
         <ThemedText type="title" style={styles.teste2}>TERROR</ThemedText >
         <ThemedText type="title" style={styles.teste22}>top terror da atualidade</ThemedText >
+        <ThemedText type="title" style={styles.teste2}></ThemedText >
         <Image
         source={require('@/assets/images/invocaçao.png')}
         style={styles.newImageStyle}
         />
          <ThemedText type="title" style={styles.teste222}>o filme e muito bom, uma das minhas franquias de filmes favorita, eu amo esse tipo de filme de terror religioso mas acho que mesmo sem gostar, todo mundo deveria ver esse filme, a trilha sonora e o suspense antes do susto sao os seus pontos altos  </ThemedText >
+         
          <div style={styles.com}>
          <Image
         source={require('@/assets/images/Vector.png')} 
@@ -41,13 +43,78 @@ export default function HomeScreen() {
        <ThemedText>
        Os investigadores paranormais Ed e Lorraine Warren trabalham para ajudar a família aterrorizada por uma entidade demoníaca em sua fazenda.          duraçao:1h e 52m            ano de lançamento:2013
        </ThemedText>
+</div>
 
-       </div>
+
+  
+
        <Image
         source={require('@/assets/images/anabeli.png')} 
         style={styles.newImageStyle4}
       />
+       
+      <ThemedText type="title" style={styles.teste222}>eu gostei muito da parte em que eles contam mais sobre a historia da Anabelle e assim me fez ter pelo menos um pouco de empatia mesmo com o vilao da historia, eu gosto quando mostram todos os pontos de vista da historia.  </ThemedText >
+         <div style={styles.com}>
+        
+         <Image
+        source={require('@/assets/images/Vector.png')} 
+        style={styles.newImageStyle3}
+        />
       
+
+         </div>
+         <div style={styles.ladinho}>
+      <Image
+        source={require('@/assets/images/14.png')} 
+        style={styles.newImageStyle2}
+      />
+       </div>
+       <div style={styles.blablu}>
+       <ThemedText>
+        3,9 ESTRELAS
+       </ThemedText>
+
+       </div>
+       <div style={styles.blablu2}>
+       <ThemedText>
+       Anos após a trágica morte de sua filha, um habilidoso artesão de bonecas e sua esposa decidem, por caridade, acolher em sua casa uma freira e dezenas de meninas desalojadas de um orfanato. Atormentado pelas lembranças traumáticas, o casal ainda precisa lidar com um amendrontador demônio do passado: Annabelle, criação do artesão.
+         duraçao:1h e 49m            ano de lançamento:2013
+       </ThemedText>
+
+       </div>
+       <ThemedText type="title" style={styles.teste2}></ThemedText >
+       <Image
+        source={require('@/assets/images/oija.png')}
+        style={styles.newImageStyle}
+        />
+         <ThemedText type="title" style={styles.teste222}>é um filme bom no começo e no desenvolvimento, eu gosto quando o suspense religioso gira em torno de uma criansa, porem o final do filme deixou muito a desejar, nao suprindo as expectativas do público. </ThemedText >
+         <div style={styles.com}>
+         <Image
+        source={require('@/assets/images/Vector.png')} 
+        style={styles.newImageStyle3}
+        />
+      
+
+         </div>
+         <div style={styles.ladinho}>
+      <Image
+        source={require('@/assets/images/14.png')} 
+        style={styles.newImageStyle2}
+      />
+       </div>
+       <div style={styles.blablu}>
+       <ThemedText>
+        2,5 ESTRELAS
+       </ThemedText>
+
+       </div>
+       <div style={styles.blablu2}>
+       <ThemedText>
+       Doris é uma menina solitária e sua mãe finge se comunicar com espíritos. Certo dia, a garota usa um tabuleiro de Ouija para contato com o falecido pai e uma série de seres malignos se apoderam de seu corpo.          duraçao:1h e 52m            ano de lançamento:2013
+       </ThemedText>
+
+       </div>
+       
     </View>
     </ScrollView>
        </SafeAreaView> 
@@ -151,12 +218,14 @@ marginTop: 80,
 fontFamily: 'ui-sans-serif',
   },
   newImageStyle4:{
+    
     height: 250, 
     width: 150,
-    marginTop: 900,
+    marginTop: 250,
     },
 
   scrollContent: {
 
   },
+
 });
