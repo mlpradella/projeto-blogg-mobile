@@ -8,12 +8,11 @@ import { window } from '@/constants/sizes';
 
 // Substituindo URLs externas por imagens locais
 const imageData = [
-  require('@/assets/images/dr.png'), 
-  require('@/assets/images/km.png'), 
-  require('@/assets/images/dr.png'), 
-  require('@/assets/images/km.png'), 
-  require('@/assets/images/dr.png'), 
-  require('@/assets/images/km.png'), 
+  require('@/assets/images/verde.png'), 
+  require('@/assets/images/roxo.png'), 
+  require('@/assets/images/azul.png'), 
+  require('@/assets/images/rosa.webp'), 
+  require('@/assets/images/vermelho.png'), 
 ];
 
 export default function HomeScreen() {
@@ -89,7 +88,7 @@ const styles = StyleSheet.create({
   },
   card: {
     flex: 1,
-    marginHorizontal: 15,
+    marginHorizontal: 40,
     borderRadius: 15,
     overflow: 'hidden',
     shadowColor: '#000',
