@@ -53,7 +53,7 @@ export default function HomeScreen() {
         style={styles.newImageStyle4}
       />
        
-      <ThemedText type="title" style={styles.teste222}>eu gostei muito da parte em que eles contam mais sobre a historia da Anabelle e assim me fez ter pelo menos um pouco de empatia mesmo com o vilao da historia, eu gosto quando mostram todos os pontos de vista da historia.  </ThemedText >
+      <ThemedText type="title" style={styles.teste222}>gostei muito da parte em que eles contam mais sobre a historia da Anabelle e assim me fez ter pelo menos um pouco de empatia mesmo com o vilao da historia, eu gosto quando mostram todos os pontos de vista da historia.  </ThemedText >
          <div style={styles.com}>
         
          <Image
@@ -136,7 +136,7 @@ const styles = StyleSheet.create({
 
   },
   stepContainer: {
-    gap: 8,
+    gap: 9,
     marginBottom: 8,
     color: '#00000',
   },
@@ -163,19 +163,22 @@ const styles = StyleSheet.create({
     color: '#ffffff',
   },
   newImageStyle: {
+    
     height: 250, 
     width: 150,
   marginLeft: 10,
-  marginTop: 15,
+  marginTop: 60,
   borderRadius: 25,
   },
   teste222: {
+    marginLeft: 10,
     marginTop: -5,
-    width: 180,
-    height: 15,
-    fontSize: 14,
+    width: 150,
+    height: 18,
+    fontSize: 11, 
     marginRight: 10,
-    fontFamily: 'ui-sans-serif',
+ 
+    
   },
   teste3: {
     display: 'flex',
@@ -186,8 +189,9 @@ const styles = StyleSheet.create({
     
   },
   com:{
-marginTop: -250,
-marginLeft: 168,
+  marginTop: -250,
+  marginLeft: 168,
+
   },
   newImageStyle3: {
     width: 38,
@@ -210,19 +214,18 @@ marginLeft: 168,
     
     marginTop: -92,
     marginLeft: 210,
-    fontFamily: 'ui-sans-serif',
+   
   },
   blablu2: {
-    fontSize: 16,
+    fontSize: 12,
 marginLeft: 180,
 marginTop: 80,
-fontFamily: 'ui-sans-serif',
+
   },
   newImageStyle4:{
-    
     height: 250, 
     width: 150,
-    marginTop: 250,
+    marginTop: 275,
     },
 
   scrollContent: {
