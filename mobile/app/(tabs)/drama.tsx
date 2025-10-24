@@ -96,7 +96,34 @@ export default function HomeScreen() {
           <View style={styles.durationRow1}>
             <Image source={require('@/assets/images/relogio.png')} style={styles.durationIcon} />
             <ThemedText type="defaultSemiBold" style={styles.durationText}>2h 8min</ThemedText>
+
           </View>
+
+          <View style={styles.test}>
+          <ThemedText type="subtitle" style={styles.sinopseTitle}>Sinopse:</ThemedText>
+          <ThemedText type="defaultSemiBold" style={styles.sinopseBody}>
+            Charlie é um jovem que tem dificuldades para interagir em sua nova escola. Ele se sente deslocado no ambiente. Seu professor de literatura, no entanto, acredita nele e o vê como um gênio.
+          </ThemedText>
+          </View>
+          <ThemedText type="subtitle" style={styles.reviewTitle}>Resenha:</ThemedText>
+          <ThemedText type="defaultSemiBold" style={styles.reviewBody}>
+          Sendo um artista e tendo assistido esse filme, tocou profundamente não apenas meu coração mas como minha alma. Chorei tanto vendo que me 
+          desidratei, 
+          não recomendo se você ainda desejar ter uma saúde mental intacta.
+      </ThemedText>
+      <ThemedText type="defaultSemiBold" style={styles.reviewDate}>18/01/2009</ThemedText>
+      <ThemedText type="subtitle" style={styles.directorTitle}>Diretor</ThemedText>
+      <View style={styles.directorInfoRow}>
+        <Image
+          source={require('@/assets/images/9PdTBjn8dJqfn3ygKvsCdl9G06J 2.png')}
+          style={styles.directorImage}
+        />
+        <ThemedText style={styles.directorFilmText}> Peter Weir</ThemedText>
+      </View>
+
+      <ThemedText type="subtitle" style={styles.movieTitle}>Stand by me</ThemedText>
+      
+      
     </ScrollView>
   );
 }
@@ -276,4 +303,8 @@ const styles = StyleSheet.create({
   directorFilmText: {
     color: '#69C6AF',
   },
+  test: {
+    marginLeft: 190,
+  },
+  
 });
