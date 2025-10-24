@@ -54,6 +54,10 @@ export default function HomeScreen() {
           programas.
         </ThemedText>
 
+        <ThemedText type='default' style={styles.data1}>
+          24/01/2025
+        </ThemedText>
+
 
         <ThemedText style={styles.filmetitulo2}>
   <ThemedText type='default' style={[styles.filme2, { fontSize: 19 }]}>Valente</ThemedText>
@@ -88,6 +92,10 @@ export default function HomeScreen() {
         vida e decisões, mesmo que em uma animação. Erros e problemas acontecem 
         nesse meio, mas isso não a impede de seguir em frente e lidar com eles 
         de seu próprio jeito.
+        </ThemedText>
+
+        <ThemedText type='default' style={styles.data2}>
+          24/01/2025
         </ThemedText>
 
         <ThemedText style={styles.filmetitulo3}>
@@ -133,6 +141,11 @@ export default function HomeScreen() {
         algo não visto ou pensado normalmente, tendo em base um 
         peixinho dourado que se transforma em uma humana.
         </ThemedText>
+
+        <ThemedText type='default' style={styles.data2}>
+          24/01/2025
+        </ThemedText>
+
       </ScrollView>
     </SafeAreaView>
   );
@@ -215,6 +228,15 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 10,
   },
+  data1: {
+    color: '#CF94EC',
+    fontFamily: 'ui-sans-serif',
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    marginTop: -15,
+    marginLeft: 270,
+    fontSize: 12,
+  },
 
 
   capa2linha:{
@@ -262,6 +284,15 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 10,
   },
+  data2: {
+    color: '#CF94EC',
+    fontFamily: 'ui-sans-serif',
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    marginTop: -15,
+    marginLeft: 270,
+    fontSize: 12,
+  },
 
 
   filmetitulo3: {
@@ -308,5 +339,14 @@ const styles = StyleSheet.create({
     fontFamily: 'ui-sans-serif',
     paddingHorizontal: 20,
     paddingVertical: 10,
+  },
+  data3: {
+    color: '#CF94EC',
+    fontFamily: 'ui-sans-serif',
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    marginTop: -15,
+    marginLeft: 270,
+    fontSize: 12,
   },
 });
