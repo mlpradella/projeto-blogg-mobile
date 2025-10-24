@@ -50,6 +50,7 @@ style={styles.relogio}/>
        style={styles.newImageStyle54}/>
     <ThemedText type='subtitle' style={styles.nomev}>A Vila</ThemedText>
     </ThemedView>
+
     <Image source={require('@/assets/images/14v.png')}
     style={styles.see2}/>
 
@@ -64,13 +65,77 @@ style={styles.relogio}/>
     <ThemedText type='subtitle' style={styles.texto}>Achei dolorosamente triste, imaginei que seria mais um filme sobre uma comunidade isolada sofrendo com “coisas estranhas estão acontecendo”, mas fui surpreedida com um filme que fala sobre os perigos de negar coletivamente a realidade do sofrimento e construir uma mitologia enganosa para um suposto “bem maior”. A dor é uma parte natural do progresso, e a verdadeira fé seria permitir que as pessoas descobrissem isso por si mesmas.</ThemedText>
     <ThemedText type='subtitle' style={styles.data}>18/04/2025</ThemedText>
 
-  <ThemedText type='title' style={styles.acao}>Ação</ThemedText>
+
+  <ThemedText type='title' style={styles.acao}>AÇÃO</ThemedText>
 
   <ThemedView style={styles.im}>
     <Image source={require('@/assets/images/old.png')}
     style={styles.newImageStyle545}></Image>
-
+    <ThemedText type='subtitle' style={styles.nomeo}>OldBoy</ThemedText>
   </ThemedView>
+
+    <Image source={require('@/assets/images/16.png')}
+    style={styles.see2}></Image>
+
+    <Image source={require('@/assets/images/eso.png')}
+    style={styles.see}></Image>
+    <ThemedText type='subtitle' style={styles.nota}>4.0 estrelas</ThemedText>
+
+    <Image source={require('@/assets/images/relo.png')}
+    style={styles.relogio}></Image>
+    <ThemedText type='subtitle' style={styles.tempo}>2 horas</ThemedText>
+
+    <ThemedText type='subtitle' style={styles.texto}>Acho que nunca fiquei tão horrorizada, chocada, estupefata, atônita, pasma, perplexa, estarrecida, boquiaberta, espantada, abalada, impactada, assombrada assistindo qualquer coisa em toda a minha existência. 
+THIS IS CINEMA.
+Esse filme definitivamente não é para qualquer um, não por apresentar uma trama difícil, mas por abordar um tema tão complicado, principalmente nos minutos finais do filme, por mais que talvez fosse “esperado” ou “previsível” (para mim não foi) ter a confirmação embrulha o estômago.
+  </ThemedText>
+  <ThemedText type='subtitle' style={styles.data}>22/08/2025</ThemedText>
+
+
+  <ThemedText type='title' style={styles.animacao}>ANIMAÇÃO</ThemedText>
+
+  <ThemedView style={styles.im}>
+    <Image source={require('@/assets/images/jardim.png')}
+    style={styles.newImageStyle545}></Image>
+    <ThemedText type='subtitle' style={styles.nomej}>O túmulo dos vagalumes</ThemedText>
+  </ThemedView>
+
+    <Image source={require('@/assets/images/12.png')}
+    style={styles.see3}></Image>
+
+    <Image source={require('@/assets/images/esj.png')}
+    style={styles.see}></Image>
+    <ThemedText type='subtitle' style={styles.nota}>4.5 estrelas</ThemedText>
+
+    <Image source={require('@/assets/images/relj.png')}
+    style={styles.relogio}></Image>
+    <ThemedText type='subtitle' style={styles.tempo}>1h39min</ThemedText>
+
+    <ThemedText type='subtitle' style={styles.texto}>Quando decidi assistir esse filme, eu sabia que ia machucar minha alma, mas eu precisava sentir isso. Sempre gostei de longas que tocassem em uma parte mais sensível de mim (não por algum motivo em específico, apenas gosto quando um filme não é apenas um filme, se isso faz sentido) e amo todos os filmes do Studio Ghibli, acho lindo como eles retratam os personagem, as relações entre eles e as interações com o cenário, em especial esse por abordar um tema tão doloroso com uma animação tão rica.</ThemedText>
+    <ThemedText type='subtitle' style={styles.data}>17/08/2025</ThemedText>
+
+
+    <ThemedText type='title' style={styles.drama}>DRAMA</ThemedText>
+
+    <ThemedView style={styles.im}>
+      <Image source={require('@/assets/images/dia.png')}
+      style={styles.newImageStyle545}></Image>
+      <ThemedText type='subtitle' style={styles.nomed}>Dias perfeitos</ThemedText>
+    </ThemedView>
+
+    <Image source={require('@/assets/images/12.png')}
+    style={styles.see4}></Image>
+
+    <Image source={require('@/assets/images/esd.png')}
+    style={styles.see}></Image>
+    <ThemedText type='subtitle' style={styles.nota}>5.0 estrelas</ThemedText>
+
+    <Image source={require('@/assets/images/reld.png')}
+    style={styles.relogio}></Image>
+    <ThemedText type='subtitle' style={styles.tempo}>2h5min</ThemedText>
+
+    <ThemedText type='subtitle' style={styles.texto}>Amo filmes em que “nada acontece”, no sentido de não ter uma grande trama ou um roteiro extremamente complexo, apenas mostrando a beleza da vida, com uma fotográfia leve e que me faz pensar. E esse filme entrega exatamente isso através de uma perspectiva tão simples, com poucos diálogos e paisagens contemplativas uma bela visão, e muito carinhosa, da vida.</ThemedText>
+    <ThemedText type='subtitle' style={styles.data}>10/11/2024</ThemedText>
 
     </View>
 
@@ -186,7 +251,7 @@ tempo: {
 data:{
   marginTop: 30,
   fontSize: 12,
-  marginLeft: '80%'
+  marginLeft: '70%'
 },
 
 terror: {
@@ -239,12 +304,54 @@ newImageStyle545: {
   marginRight: 266,
 },
 
+nomeo: {
+  fontSize: 20,
+  color: '#519548',
+  marginLeft: 180,
+  marginTop: -200,
+},
 
+animacao: {
+  backgroundColor: '#00002B',
+  marginRight: '60%',
+  color: '#D85CFC',
+  fontSize: 20,
+},
 
+nomej: {
+  fontSize: 19,
+  color: '#D85CFC',
+  marginLeft: 180,
+  marginTop: -200,
+},
 
+see3: {
+  width: 18,
+  height: 18,
+  marginLeft: 380,
+  marginTop: -26,
+},
 
+drama: {
+  backgroundColor: '#00002B',
+  marginRight: '68%',
+  color: '#377A98',
+  fontSize: 20,
+},
 
+nomed: {
+  fontSize: 19,
+  color: '#377A98',
+  marginLeft: 180,
+  marginTop: -200,
+},
 
+see4: {
+  width: 19,
+  height: 19,
+  marginLeft: 190,
+  marginTop: -30,
+},
 
 scrollContent: {
   
