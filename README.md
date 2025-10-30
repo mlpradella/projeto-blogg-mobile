@@ -1,20 +1,18 @@
- # Pocscast Movies📱
+ # 𐔌 . ⋮ 𝒫ℴ𝒸𝓈𝒸𝒶𝓈𝓉 ℳℴ𝓋𝒾ℯ𝓈 .ᐟ ֹ ₊ ꒱
 
-
-
-## Índice
+## Iɴᴅɪᴄᴇs
 
 - [Integrantes do grupo:](#Integrantes-do-grupo)
-- [Protótipo Fima](#link-do-protótipo-no-figma)
-- [Sobre o App](#sobre-o-blog)
+- [Protótipo Figma](#link-do-protótipo-no-figma)
+- [Sobre o Blog](#sobre-o-blog)
 - [Observações](#observações)
-- [Funcionalidades ✨](#funcionalidades-)
-- [Tecnologias Utilizadas 🛠️](#tecnologias-utilizadas-️)
-- [Contribuindo 🤝](#contribuindo-)
+- [Funcionalidades ](#funcionalidades)
+- [Tecnologias Utilizadas ](#tecnologias-utilizadas)
+- [Páginas](#páginas)
 
 
 ---
-## Integrantes do grupo
+## Iɴᴛᴇɢʀᴀɴᴛᴇs ᴅᴏ ɢʀᴜᴘᴏ
 
 * Bianca Amorim N: 02
 * Bianca Pereira Moreira N: 03
@@ -26,16 +24,16 @@
 
 ---
 
-## Link do Protótipo no Figma 
+## Lɪɴᴋ ᴅᴏ Pʀᴏᴛᴏ́ᴛɪᴘᴏ ɴᴏ Fɪɢᴍᴀ
 [⤷ ゛Cʟɪǫᴜᴇ ᴀǫᴜɪˎˊ˗~](https://www.figma.com/design/tRbJEQ7SvRJcazsnI3eTdk/mobile?node-id=0-1&p=f&t=W1xWM0LvMVcoPL9y-0)
 
 ---
 
-## Sobre o Blog
+## Sᴏʙʀᴇ ᴏ Bʟᴏɢ
 
 Este é um site de blog de filmes com uma estética separada por cores para cada filme. Foi desenvolvido com o objetivo de mostrar filmes em base dos gêneros, junto com uma página de recomendações de acordo com o que a pessoa desejar.
 
-## Observações
+## Oʙsᴇʀᴠᴀᴄ̧ᴏ̃ᴇs
 **Em determinadas páginas não há utilização de API, sendo elas:**
  * Alan - Drama
  * Bianca Amorim - Animação
@@ -48,7 +46,7 @@ Este é um site de blog de filmes com uma estética separada por cores para cada
  * Bianca - Recomendações de filmes 
  Api: ??
 
-## Funcionalidades ✨
+## Fᴜɴᴄɪᴏɴᴀʟɪᴅᴀᴅᴇs
 
 Liste as principais características e funcionalidades do seu aplicativo.
 * Integração com API 
@@ -56,21 +54,219 @@ Liste as principais características e funcionalidades do seu aplicativo.
 * É um site público sem a necessidade de login.
 * Contém uma área de "Recomendações de Filmes"
 
+---
 
-## Tecnologias Utilizadas 🛠️
+## Tᴇᴄɴᴏʟᴏɢɪᴀs Uᴛɪʟɪᴢᴀᴅᴀs
 
  A principal tecnologia utilizadas durante o processo:
 
- * React native
+ **Tecnologia principal:** 
+  - Figma (Prototipagem)
+  - React Native
 
-* **Sites para auxílio:** 
- 
-Gemini  AI e 
- Deep Seek
-(Grande parte do código foi feito manualmente, apenas em certas partes com envolvimento de APIs ou coisas muito espécificas útilizamos a IA)
-* **Tecnologia principal:** 
+---
 
-React Native
+## **Pᴀ́ɢɪɴᴀs**
+### Tela 1 (Tela de Início) - Giovanna
+
+### Descrição
+ * (Coloque a descrição)
+---
+### Para quais funcionalidades foi pensada
+
+ * (Coloque suas funcionalidades)
+
+### Observações 
+ * (Coloque as observações)
+---
+### Problemas/Dificuldades durante o projeto
+
+
+**coloque aqui**
+
+### Soluções para os problemas:
+ (Adicione a solução ou atráves de imagens ou descritivo)
+
+---
+### Imagens da Página:
+
+!!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
+
+ ![Tela1](assentsREADME/imagemquevcquer.png)
+
+ (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
+
+---
+### Tela 2 (Ação) - Maria Luiza 
+### Descrição
+ * (Coloque a descrição)
+
+---
+### Para quais funcionalidades foi pensada
+ * (Coloque suas funcionalidades)
+
+### Observações 
+ * (Coloque as observações)
+
+---
+### Problemas/Dificuldades durante o projeto
+
+**coloque aqui**
+
+### Soluções para os problemas:
+ (Adicione a solução ou atráves de imagens ou descritivo)
+
+---
+### Imagens da Página:
+
+!!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
+
+ ![Tela1](assentsREADME/imagemquevcquer.png)
+
+ (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
+
+---
+### Tela 3 (Drama) - Allan
+### Descrição
+ * (Coloque a descrição)
+---
+### Para quais funcionalidades foi pensada
+ * (Coloque suas funcionalidades)
+
+### Observações 
+ * (Coloque as observações)
+
+---
+### Problemas/Dificuldades durante o projeto
+
+**coloque aqui**
+
+### Soluções para os problemas:
+ (Adicione a solução atráves de imagens ou descritivo)
+
+---
+### Imagens da Página:
+
+!!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
+
+ ![Tela1](assentsREADME/imagemquevcquer.png)
+
+ (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
+
+---
+### Tela 4 (Romance) - Kamilly
+### Descrição
+ * (Coloque a descrição)
+---
+
+---
+### Para quais funcionalidades foi pensada
+ * (Coloque suas funcionalidades)
+
+### Observações 
+ * (Coloque as observações)
+
+---
+### Problemas/Dificuldades durante o projeto
+
+**coloque aqui**
+
+### Soluções para os problemas:
+ (Adicione a solução ou atráves de imagens ou descritivo)
+
+---
+### Imagens da Página:
+
+!!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
+
+ ![Tela1](assentsREADME/imagemquevcquer.png)
+
+ (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
+
+---
+### Tela 5 (Terror) - Maykon
+### Descrição
+ * (Coloque a descrição)
+---
+### Para quais funcionalidades foi pensada
+ * (Coloque suas funcionalidades)
+
+### Observações 
+ * (Coloque as observações)
+---
+### Problemas/Dificuldades durante o projeto
+
+**coloque aqui**
+
+### Soluções para os problemas:
+ (Adicione a solução ou atráves de imagens ou descritivo)
+
+---
+### Imagens da Página:
+!!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
+
+ ![Tela1](assentsREADME/imagemquevcquer.png)
+
+ (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
+
+---
+### Tela 6 (Animações) - Bianca Amorim
+### Descrição
+ * (Coloque a descrição)
+---
+
+### Para quais funcionalidades foi pensada
+ * (Coloque suas funcionalidades)
+
+### Observações 
+ * (Coloque as observações)
+
+---
+### Problemas/Dificuldades durante o projeto
+
+**coloque aqui**
+
+### Soluções para os problemas:
+ (Adicione a solução ou atráves de imagens ou descritivo)
+
+---
+### Imagens da Página:
+
+
+!!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
+
+ ![Tela1](assentsREADME/imagemquevcquer.png)
+
+ (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
+
+---
+### Tela 6 (Recomendações) - Bianca Pereira
+### Descrição
+ * (Coloque a descrição)
+---
+### Para quais funcionalidades foi pensada
+ * (Coloque suas funcionalidades)
+
+### Observações 
+ * (Coloque as observações)
+---
+### Problemas/Dificuldades durante o projeto
+
+**coloque aqui**
+
+### Soluções para os problemas:
+ (Adicione a solução ou atráves de imagens ou descritivo)
+
+---
+### Imagens da Página:
+
+!!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
+
+ ![Tela1](assentsREADME/imagemquevcquer.png)
+
+ (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
+
+---
 
 
 
