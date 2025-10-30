@@ -27,7 +27,7 @@ export default function HomeScreen() {
             <View style={styles.rightContent}>
               <Image
                 source={require('@/assets/images/avaliacao-acao.png')}
-                style={styles.avaliacao}
+                style={styles.avaliacao1}
               />
               <ThemedText type='default' style={styles.sinopse}>
                 O filme Tropa de Elite acompanha o Capitão Nascimento, do BOPE, que procura um sucessor enquanto
@@ -72,7 +72,7 @@ export default function HomeScreen() {
           </View>
 
           <ThemedView style={styles.textoContainer}>
-            <ThemedText style={styles.opiniao} type="default">
+            <ThemedText style={styles.opiniao2} type="default">
               O filme vai muito além de ser apenas um filme de ação ele é uma análise profunda sobre corrupção,
               violência e os dilemas morais enfrentados pelos policiais.
               O que realmente marca o filme é a narração de Wagner Moura como o Capitão Nascimento.
@@ -107,7 +107,7 @@ export default function HomeScreen() {
           </View>
 
           <ThemedView style={styles.textoContainer}>
-            <ThemedText style={styles.opiniao} type="default">
+            <ThemedText style={styles.opiniao3} type="default">
               Mesmo sendo um filme nem tanto conhecido. Oque realmente destaca, é como o filme nos
               deixa sentir e ver a lealdade e desespero do agente, para salvar o presidente. 
               A ação do filme é totalmente pensada no realismo, os confrontos corporais brutais e realistas, deixando
@@ -149,7 +149,8 @@ const styles = StyleSheet.create({
     paddingTop: 20,
   },
   tituloFilme: {
-    color: '#3d723f',
+    fontFamily: 'ui-sans-serif',
+    color: '#62C455',
   },
   stepContainer: {
     gap: 8,
@@ -168,6 +169,7 @@ const styles = StyleSheet.create({
     height: 310,
     width: 150,
     resizeMode: 'contain',
+    marginTop: -35,
   },
   rightContent: {
     flex: 1,
@@ -175,15 +177,22 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'flex-start',
   },
-  avaliacao: {
+  avaliacao1: {
     height: 80,
     width: 120,
     resizeMode: 'contain',
     marginBottom: 10,
   },
+  avaliacao: {
+    height: 80,
+    width: 120,
+    resizeMode: 'contain',
+    marginBottom: 10,
+    marginLeft: -20, 
+  },
   sinopse: {
     fontSize: 14,
-    lineHeight: 18,
+    lineHeight: 15,
     color: '#FFFFFF',
     flex: 1,
   },
@@ -197,9 +206,24 @@ const styles = StyleSheet.create({
     lineHeight: 21,
     color: '#FFFFFF',
     marginBottom: 10,
+    marginTop: -30,
+  },
+  opiniao2: {
+    fontSize: 14,
+    lineHeight: 21,
+    color: '#FFFFFF',
+    marginBottom: 10,
+    marginTop: -50,
+  },
+  opiniao3: {
+    fontSize: 14,
+    lineHeight: 21,
+    color: '#FFFFFF',
+    marginBottom: 10,
+    marginTop: -40,
   },
   data: {
-    color: '#3d723f',
+    color: '#62C455',
     textAlign: 'right',
     fontSize: 12,
   },
