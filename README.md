@@ -7,7 +7,7 @@
 - [Integrantes do grupo:](#Integrantes-do-grupo)
 - [Protótipo Fima](#link-do-protótipo-no-figma)
 - [Funcionalidades ✨](#funcionalidades-)
-- [Tecnologias Utilizadas🛠️](#tecnologias-utilizadas-️)
+- [Tecnologias Utilizadas 🛠️](#tecnologias-utilizadas-️)
 - [Contribuindo 🤝](#contribuindo-)
 
 
@@ -25,7 +25,7 @@
 ---
 
 ## Link do Protótipo no Figma 
-(⤷ ゛Cʟɪǫᴜᴇ ᴀǫᴜɪˎˊ˗)
+[⤷ ゛Cʟɪǫᴜᴇ ᴀǫᴜɪˎˊ˗~](https://www.figma.com/design/tRbJEQ7SvRJcazsnI3eTdk/mobile?node-id=0-1&p=f&t=W1xWM0LvMVcoPL9y-0)
 
 ## Funcionalidades ✨
 
