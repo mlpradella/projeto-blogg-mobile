@@ -1,235 +1,210 @@
-import { Image } from 'expo-image';
-import { SafeAreaView, StyleSheet, View } from 'react-native';
-
 import { ThemedText } from '@/components/themed-text';
+import { Image } from 'expo-image';
+import { Dimensions, SafeAreaView, StyleSheet, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
+
+const { width: screenWidth, height: screenHeight } = Dimensions.get('window');
 
 export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView contentContainerStyle={styles.scrollContent}>
-    <View style={styles.container}>
-      
-        <ThemedText type="title" style={styles.teste2}>TERROR</ThemedText >
-        <ThemedText type="title" style={styles.teste22}>top terror da atualidade</ThemedText >
-        <ThemedText type="title" style={styles.teste2}></ThemedText >
-        <Image
-        source={require('@/assets/images/invocaçao.png')}
-        style={styles.newImageStyle}
-        />
-         <ThemedText type="title" style={styles.teste222}>o filme e muito bom, uma das minhas franquias de filmes favorita, eu amo esse tipo de filme de terror religioso mas acho que mesmo sem gostar, todo mundo deveria ver esse filme, a trilha sonora e o suspense antes do susto sao os seus pontos altos  </ThemedText >
-         
-         <div style={styles.com}>
-         <Image
-        source={require('@/assets/images/Vector.png')} 
-        style={styles.newImageStyle3}
-        />
-      
+      <ScrollView 
+        contentContainerStyle={styles.scrollContent}
+        showsVerticalScrollIndicator={false}
+      >
+        <View style={styles.content}>
+          {/* Títulos */}
+          <ThemedText type="title" style={styles.titleMain}>TERROR</ThemedText>
+          <ThemedText type="title" style={styles.subtitle}>top terror da atualidade</ThemedText>
+          
+          {/* Primeiro Filme */}
+          <View style={styles.movieContainer}>
+            <View style={styles.movieContent}>
+              <Image
+                source={require('@/assets/images/invocaçao.png')}
+                style={styles.movieImage}
+              />
+              <View style={styles.movieDetails}>
+                <ThemedText style={styles.movieDescription}>
+                  O filme é muito bom, uma das minhas franquias de filmes favorita, eu amo esse tipo de filme de terror religioso mas acho que mesmo sem gostar, todo mundo deveria ver esse filme, a trilha sonora e o suspense antes do susto são os seus pontos altos.
+                </ThemedText>
+                
+                <View style={styles.ratingContainer}>
+                  <View style={styles.ratingIcons}>
+                    <Image
+                      source={require('@/assets/images/Vector.png')}
+                      style={styles.heartIcon}
+                    />
+                    <Image
+                      source={require('@/assets/images/14.png')}
+                      style={styles.ageIcon}
+                    />
+                  </View>
+                  <ThemedText style={styles.ratingText}>4.5 ESTRELAS</ThemedText>
+                </View>
+                
+                <ThemedText style={styles.movieInfo}>
+                  Os investigadores paranormais Ed e Lorraine Warren trabalham para ajudar a família aterrorizada por uma entidade demoníaca em sua fazenda. Duração: 1h e 52m. Ano de lançamento: 2013
+                </ThemedText>
+              </View>
+            </View>
+          </View>
 
-         </div>
-         <div style={styles.ladinho}>
-      <Image
-        source={require('@/assets/images/14.png')} 
-        style={styles.newImageStyle2}
-      />
-       </div>
-       <div style={styles.blablu}>
-       <ThemedText>
-        4.5 ESTRELAS
-       </ThemedText>
+          {/* Segundo Filme */}
+          <View style={styles.movieContainer}>
+            <View style={styles.movieContent}>
+              <Image
+                source={require('@/assets/images/anabeli.png')}
+                style={styles.movieImage}
+              />
+              <View style={styles.movieDetails}>
+                <ThemedText style={styles.movieDescription}>
+                  Gostei muito da parte em que eles contam mais sobre a história da Anabelle e assim me fez ter pelo menos um pouco de empatia mesmo com o vilão da história, eu gosto quando mostram todos os pontos de vista da história.
+                </ThemedText>
+                
+                <View style={styles.ratingContainer}>
+                  <View style={styles.ratingIcons}>
+                    <Image
+                      source={require('@/assets/images/Vector.png')}
+                      style={styles.heartIcon}
+                    />
+                    <Image
+                      source={require('@/assets/images/14.png')}
+                      style={styles.ageIcon}
+                    />
+                  </View>
+                  <ThemedText style={styles.ratingText}>3.9 ESTRELAS</ThemedText>
+                </View>
+                
+                <ThemedText style={styles.movieInfo}>
+                  Anos após a trágica morte de sua filha, um habilidoso artesão de bonecas e sua esposa decidem, por caridade, acolher em sua casa uma freira e dezenas de meninas desalojadas de um orfanato. Atormentado pelas lembranças traumáticas, o casal ainda precisa lidar com um aterrador demônio do passado: Annabelle, criação do artesão. Duração: 1h e 49m. Ano de lançamento: 2013
+                </ThemedText>
+              </View>
+            </View>
+          </View>
 
-       </div>
-       <div style={styles.blablu2}>
-       <ThemedText>
-       Os investigadores paranormais Ed e Lorraine Warren trabalham para ajudar a família aterrorizada por uma entidade demoníaca em sua fazenda.          duraçao:1h e 52m            ano de lançamento:2013
-       </ThemedText>
-</div>
-
-
-  
-
-       <Image
-        source={require('@/assets/images/anabeli.png')} 
-        style={styles.newImageStyle4}
-      />
-       
-      <ThemedText type="title" style={styles.teste222}>gostei muito da parte em que eles contam mais sobre a historia da Anabelle e assim me fez ter pelo menos um pouco de empatia mesmo com o vilao da historia, eu gosto quando mostram todos os pontos de vista da historia.  </ThemedText >
-         <div style={styles.com}>
-        
-         <Image
-        source={require('@/assets/images/Vector.png')} 
-        style={styles.newImageStyle3}
-        />
-      
-
-         </div>
-         <div style={styles.ladinho}>
-      <Image
-        source={require('@/assets/images/14.png')} 
-        style={styles.newImageStyle2}
-      />
-       </div>
-       <div style={styles.blablu}>
-       <ThemedText>
-        3,9 ESTRELAS
-       </ThemedText>
-
-       </div>
-       <div style={styles.blablu2}>
-       <ThemedText>
-       Anos após a trágica morte de sua filha, um habilidoso artesão de bonecas e sua esposa decidem, por caridade, acolher em sua casa uma freira e dezenas de meninas desalojadas de um orfanato. Atormentado pelas lembranças traumáticas, o casal ainda precisa lidar com um amendrontador demônio do passado: Annabelle, criação do artesão.
-         duraçao:1h e 49m            ano de lançamento:2013
-       </ThemedText>
-
-       </div>
-       <ThemedText type="title" style={styles.teste2}></ThemedText >
-       <Image
-        source={require('@/assets/images/oija.png')}
-        style={styles.newImageStyle}
-        />
-         <ThemedText type="title" style={styles.teste222}>é um filme bom no começo e no desenvolvimento, eu gosto quando o suspense religioso gira em torno de uma criansa, porem o final do filme deixou muito a desejar, nao suprindo as expectativas do público. </ThemedText >
-         <div style={styles.com}>
-         <Image
-        source={require('@/assets/images/Vector.png')} 
-        style={styles.newImageStyle3}
-        />
-      
-
-         </div>
-         <div style={styles.ladinho}>
-      <Image
-        source={require('@/assets/images/14.png')} 
-        style={styles.newImageStyle2}
-      />
-       </div>
-       <div style={styles.blablu}>
-       <ThemedText>
-        2,5 ESTRELAS
-       </ThemedText>
-
-       </div>
-       <div style={styles.blablu2}>
-       <ThemedText>
-       Doris é uma menina solitária e sua mãe finge se comunicar com espíritos. Certo dia, a garota usa um tabuleiro de Ouija para contato com o falecido pai e uma série de seres malignos se apoderam de seu corpo.          duraçao:1h e 52m            ano de lançamento:2013
-       </ThemedText>
-
-       </div>
-       
-    </View>
-    </ScrollView>
-       </SafeAreaView> 
-
-  
+          {/* Terceiro Filme */}
+          <View style={styles.movieContainer}>
+            <View style={styles.movieContent}>
+              <Image
+                source={require('@/assets/images/oija.png')}
+                style={styles.movieImage}
+              />
+              <View style={styles.movieDetails}>
+                <ThemedText style={styles.movieDescription}>
+                  É um filme bom no começo e no desenvolvimento, eu gosto quando o suspense religioso gira em torno de uma criança, porém o final do filme deixou muito a desejar, não suprindo as expectativas do público.
+                </ThemedText>
+                
+                <View style={styles.ratingContainer}>
+                  <View style={styles.ratingIcons}>
+                    <Image
+                      source={require('@/assets/images/Vector.png')}
+                      style={styles.heartIcon}
+                    />
+                    <Image
+                      source={require('@/assets/images/14.png')}
+                      style={styles.ageIcon}
+                    />
+                  </View>
+                  <ThemedText style={styles.ratingText}>2.5 ESTRELAS</ThemedText>
+                </View>
+                
+                <ThemedText style={styles.movieInfo}>
+                  Doris é uma menina solitária e sua mãe finge se comunicar com espíritos. Certo dia, a garota usa um tabuleiro de Ouija para contato com o falecido pai e uma série de seres malignos se apoderam de seu corpo. Duração: 1h e 52m. Ano de lançamento: 2013
+                </ThemedText>
+              </View>
+            </View>
+          </View>
+        </View>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 25,
     flex: 1,
     backgroundColor: '#00002E',
   },
-  titleContainer: {
-   
-    alignItems: 'center',
-    gap: 8,
-
-  },
-  stepContainer: {
-    gap: 9,
-    marginBottom: 8,
-    color: '#00000',
-  },
-  reactLogo: {
-    height: 280,
-    width: 420,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
-  },
-  teste2: {
-    color: '#911315',
-    display: 'flex',
-    justifyContent: 'center',
-    fontFamily: 'ui-sans-serif',
-  },
-  teste22: {
-    color: '#E0E0E0',
-    display: 'flex',
-    justifyContent: 'center',
-    fontFamily: 'ui-sans-serif',
-  },
-  subtitulo: {
-    color: '#ffffff',
-  },
-  newImageStyle: {
-    
-    height: 250, 
-    width: 150,
-  marginLeft: 10,
-  marginTop: 60,
-  borderRadius: 25,
-  },
-  teste222: {
-    marginLeft: 10,
-    marginTop: -5,
-    width: 150,
-    height: 18,
-    fontSize: 11, 
-    marginRight: 10,
- 
-    
-  },
-  teste3: {
-    display: 'flex',
-    marginLeft: 95,
-    width: 50,
-    height: 50,
-    marginTop: -110,
-    
-  },
-  com:{
-  marginTop: -250,
-  marginLeft: 168,
-
-  },
-  newImageStyle3: {
-    width: 38,
-    height: 38,
-  },
-
-  newImageStyle2: {
-    width: 40,
-    height: 40,
-    
-  },
- ladinho: {
-   display: 'flex',
-   justifyContent: 'center',
-   marginLeft: 7,
-   marginTop: 20,
-   },
-   
-  blablu: {
-    
-    marginTop: -92,
-    marginLeft: 210,
-   
-  },
-  blablu2: {
-    fontSize: 12,
-marginLeft: 180,
-marginTop: 80,
-
-  },
-  newImageStyle4:{
-    height: 250, 
-    width: 150,
-    marginTop: 275,
-    },
-
   scrollContent: {
-
+    flexGrow: 1,
+    paddingVertical: screenHeight * 0.02,
   },
-
+  content: {
+    flex: 1,
+    paddingHorizontal: screenWidth * 0.04,
+  },
+  titleMain: {
+    color: '#911315',
+    textAlign: 'center',
+    fontFamily: 'ui-sans-serif',
+    fontSize: screenWidth * 0.08,
+    marginBottom: screenHeight * 0.01,
+  },
+  subtitle: {
+    color: '#E0E0E0',
+    textAlign: 'center',
+    fontFamily: 'ui-sans-serif',
+    fontSize: screenWidth * 0.05,
+    marginBottom: screenHeight * 0.03,
+  },
+  movieContainer: {
+    marginBottom: screenHeight * 0.04,
+    backgroundColor: 'rgba(255, 255, 255, 0.05)',
+    borderRadius: 16,
+    padding: screenWidth * 0.04,
+  },
+  movieContent: {
+    flexDirection: screenWidth > 768 ? 'row' : 'column',
+    alignItems: screenWidth > 768 ? 'flex-start' : 'center',
+  },
+  movieImage: {
+    width: screenWidth > 768 ? screenWidth * 0.25 : screenWidth * 0.4,
+    height: screenWidth > 768 ? screenHeight * 0.3 : screenHeight * 0.25,
+    borderRadius: 12,
+    marginRight: screenWidth > 768 ? screenWidth * 0.04 : 0,
+    marginBottom: screenWidth > 768 ? 0 : screenHeight * 0.02,
+  },
+  movieDetails: {
+    flex: 1,
+    flexDirection: 'column',
+  },
+  movieDescription: {
+    color: '#E0E0E0',
+    fontSize: screenWidth * 0.035,
+    lineHeight: screenHeight * 0.02,
+    marginBottom: screenHeight * 0.02,
+    textAlign: 'left',
+  },
+  ratingContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: screenHeight * 0.02,
+    flexWrap: 'wrap',
+  },
+  ratingIcons: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginRight: screenWidth * 0.04,
+  },
+  heartIcon: {
+    width: screenWidth * 0.08,
+    height: screenWidth * 0.08,
+    marginRight: screenWidth * 0.02,
+  },
+  ageIcon: {
+    width: screenWidth * 0.08,
+    height: screenWidth * 0.08,
+  },
+  ratingText: {
+    color: '#E0E0E0',
+    fontSize: screenWidth * 0.04,
+    fontWeight: 'bold',
+  },
+  movieInfo: {
+    color: '#E0E0E0',
+    fontSize: screenWidth * 0.033,
+    lineHeight: screenHeight * 0.02,
+    textAlign: 'left',
+  },
 });
