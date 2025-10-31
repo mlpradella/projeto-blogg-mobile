@@ -1,50 +1,269 @@
-# Welcome to your Expo app 👋
+ # 𐔌 . ⋮ 𝒫ℴ𝒸𝓈𝒸𝒶𝓈𝓉 ℳℴ𝓋𝒾ℯ𝓈 .ᐟ ֹ ₊ ꒱
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Iɴᴅɪᴄᴇs
 
-## Get started
+- [Integrantes do grupo:](#Integrantes-do-grupo)
+- [Protótipo Figma](#link-do-protótipo-no-figma)
+- [Sobre o Blog](#sobre-o-blog)
+- [Observações](#observações)
+- [Funcionalidades ](#funcionalidades)
+- [Tecnologias Utilizadas ](#tecnologias-utilizadas)
+- [Páginas](#páginas)
 
-1. Install dependencies
 
-   ```bash
-   npm install
-   ```
+---
+## Iɴᴛᴇɢʀᴀɴᴛᴇs ᴅᴏ ɢʀᴜᴘᴏ
 
-2. Start the app
+* Bianca Amorim N: 02
+* Bianca Pereira Moreira N: 03
+* Giovanna Gabrielly Burda N: 08
+* Kamilly Lacerda N: 16
+* Maria Luiza N: 21
+* Maykon da Costa Salvador N: 22
+* Alan Cordeiro Martins N: 29    
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## Lɪɴᴋ ᴅᴏ Pʀᴏᴛᴏ́ᴛɪᴘᴏ ɴᴏ Fɪɢᴍᴀ
+[⤷ ゛Cʟɪǫᴜᴇ ᴀǫᴜɪˎˊ˗~](https://www.figma.com/design/tRbJEQ7SvRJcazsnI3eTdk/mobile?node-id=0-1&p=f&t=W1xWM0LvMVcoPL9y-0)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Sᴏʙʀᴇ ᴏ Bʟᴏɢ
 
-## Get a fresh project
+Este é um site de blog de filmes com uma estética separada por cores para cada filme. Foi desenvolvido com o objetivo de mostrar filmes em base dos gêneros, junto com uma página de recomendações de acordo com o que a pessoa desejar.
 
-When you're ready, run:
+## Oʙsᴇʀᴠᴀᴄ̧ᴏ̃ᴇs
+**Em determinadas páginas não há utilização de API, sendo elas:**
+ * Alan - Drama
+ * Bianca Amorim - Animação
+ * Giovanna - Tela inicial
+ * Maria Luiza - Ação
+ * Kamilly - Romance
+ * Maykon - Terror
 
-```bash
-npm run reset-project
-```
+**Única página que contém**
+ * Bianca - Recomendações de filmes 
+ Api: ??
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Fᴜɴᴄɪᴏɴᴀʟɪᴅᴀᴅᴇs
 
-## Learn more
+Liste as principais características e funcionalidades do seu aplicativo.
+* Integração com API 
+* Navegação intuitiva 
+* É um site público sem a necessidade de login.
+* Contém uma área de "Recomendações de Filmes"
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Tᴇᴄɴᴏʟᴏɢɪᴀs Uᴛɪʟɪᴢᴀᴅᴀs
 
-## Join the community
+ A principal tecnologia utilizadas durante o processo:
 
-Join our community of developers creating universal apps.
+ **Tecnologia principal:** 
+  - Figma (Prototipagem)
+  - React Native
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+
+## **Pᴀ́ɢɪɴᴀs**
+### Tela 1 (Tela de Início) - Giovanna
+
+### Descrição
+ * (Coloque a descrição)
+---
+### Para quais funcionalidades foi pensada
+
+ * (Coloque suas funcionalidades)
+
+### Observações 
+ * (Coloque as observações)
+---
+### Problemas/Dificuldades durante o projeto
+
+
+**coloque aqui**
+
+### Soluções para os problemas:
+ (Adicione a solução ou atráves de imagens ou descritivo)
+
+---
+### Imagens da Página:
+
+!!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
+
+ ![Tela1](assentsREADME/imagemquevcquer.png)
+
+ (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
+
+---
+### Tela 2 (Ação) - Maria Luiza 
+### Descrição
+ * (Coloque a descrição)
+
+---
+### Para quais funcionalidades foi pensada
+ * (Coloque suas funcionalidades)
+
+### Observações 
+ * (Coloque as observações)
+
+---
+### Problemas/Dificuldades durante o projeto
+
+**coloque aqui**
+
+### Soluções para os problemas:
+ (Adicione a solução ou atráves de imagens ou descritivo)
+
+---
+### Imagens da Página:
+
+!!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
+
+ ![Tela1](assentsREADME/imagemquevcquer.png)
+
+ (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
+
+---
+### Tela 3 (Drama) - Allan
+### Descrição
+ * (Coloque a descrição)
+---
+### Para quais funcionalidades foi pensada
+ * (Coloque suas funcionalidades)
+
+### Observações 
+ * (Coloque as observações)
+
+---
+### Problemas/Dificuldades durante o projeto
+
+**coloque aqui**
+
+### Soluções para os problemas:
+ (Adicione a solução atráves de imagens ou descritivo)
+
+---
+### Imagens da Página:
+
+!!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
+
+ ![Tela1](assentsREADME/imagemquevcquer.png)
+
+ (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
+
+---
+### Tela 4 (Romance) - Kamilly
+### Descrição
+ * (Coloque a descrição)
+---
+
+---
+### Para quais funcionalidades foi pensada
+ * (Coloque suas funcionalidades)
+
+### Observações 
+ * (Coloque as observações)
+
+---
+### Problemas/Dificuldades durante o projeto
+
+**coloque aqui**
+
+### Soluções para os problemas:
+ (Adicione a solução ou atráves de imagens ou descritivo)
+
+---
+### Imagens da Página:
+
+!!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
+
+ ![Tela1](assentsREADME/imagemquevcquer.png)
+
+ (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
+
+---
+### Tela 5 (Terror) - Maykon
+### Descrição
+ * (Coloque a descrição)
+---
+### Para quais funcionalidades foi pensada
+ * (Coloque suas funcionalidades)
+
+### Observações 
+ * (Coloque as observações)
+---
+### Problemas/Dificuldades durante o projeto
+
+**coloque aqui**
+
+### Soluções para os problemas:
+ (Adicione a solução ou atráves de imagens ou descritivo)
+
+---
+### Imagens da Página:
+!!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
+
+ ![Tela1](assentsREADME/imagemquevcquer.png)
+
+ (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
+
+---
+### Tela 6 (Animações) - Bianca Amorim
+### Descrição
+ * (Coloque a descrição)
+---
+
+### Para quais funcionalidades foi pensada
+ * (Coloque suas funcionalidades)
+
+### Observações 
+ * (Coloque as observações)
+
+---
+### Problemas/Dificuldades durante o projeto
+
+**coloque aqui**
+
+### Soluções para os problemas:
+ (Adicione a solução ou atráves de imagens ou descritivo)
+
+---
+### Imagens da Página:
+
+
+!!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
+
+ ![Tela1](assentsREADME/imagemquevcquer.png)
+
+ (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
+
+---
+### Tela 6 (Recomendações) - Bianca Pereira
+### Descrição
+ * (Coloque a descrição)
+---
+### Para quais funcionalidades foi pensada
+ * (Coloque suas funcionalidades)
+
+### Observações 
+ * (Coloque as observações)
+---
+### Problemas/Dificuldades durante o projeto
+
+**coloque aqui**
+
+### Soluções para os problemas:
+ (Adicione a solução ou atráves de imagens ou descritivo)
+
+---
+### Imagens da Página:
+
+!!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
+
+ ![Tela1](assentsREADME/imagemquevcquer.png)
+
+ (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
+
+---
