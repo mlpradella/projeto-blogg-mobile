@@ -16,9 +16,11 @@ export default function HomeScreen() {
             <ThemedText type="title" style={styles.titleContainer}>Romance</ThemedText>
           </ThemedView>
 
-          <ThemedView style={styles.titulo}>
-            <ThemedText type="default">Simplismente Acontece</ThemedText>
-          </ThemedView>
+          <ThemedText 
+        type="default" style={styles.textoSimp}>
+        Simplesmente Acontece
+    </ThemedText>
+   
 
           <Image
                   source={require('@/assets/images/simplismente-acontece.png')}
@@ -51,9 +53,10 @@ export default function HomeScreen() {
           type='default'>06/05/2025</ThemedText>
        </ThemedView>
 
-       <ThemedView style={styles.titulo2}>
-            <ThemedText type="default">Para Todos Os Garotos Que Eu Já Amei</ThemedText>
-          </ThemedView>
+        <ThemedText 
+        type="default" style={styles.textoTodos}>
+        Para Todos Os Garotos Que Eu Já Amei
+    </ThemedText>
 
            <Image
                   source={require('@/assets/images/para-todos.png')}
@@ -84,9 +87,10 @@ export default function HomeScreen() {
                     type='default'>06/05/2025</ThemedText>
                     </ThemedView> 
 
-                    <ThemedView style={styles.titulo3}>
-                      <ThemedText type='default'>A Cinco Passos De Você</ThemedText>
-                    </ThemedView>
+                     <ThemedText 
+                       type="default" style={styles.textoCinco}>
+                        A Cinco Passos De Você
+                     </ThemedText>
 
                     <Image
                       source={require('@/assets/images/cinco-passos.png')}
@@ -110,6 +114,11 @@ export default function HomeScreen() {
                           O filme em geral é bem fofo, apesar de ter umas cenas bem tristes, que faz com que nós reflitamos sobre a vida. 
                           Ele éum filme que vale a pena assistir se você curte um bom drama romântico. Ele te faz pensar sobre a importância do contato físico, da proximidade e de como cada momento é precioso.</ThemedText>
                   </ThemedView>
+
+                  <ThemedView style={styles.texto}>
+                    <ThemedText style={styles.data3}
+                    type='default'>06/05/2025</ThemedText>
+                    </ThemedView> 
     </View>
 
         </ScrollView>
@@ -132,13 +141,16 @@ const styles = StyleSheet.create({
         fontFamily: 'Bungee',
       },
 
-      titulo: {
+      textoSimp: {
         gap: 8,
         marginBottom: 8,
         backgroundColor: '#00002B',
-        alignItems: 'center',
         fontFamily: 'ui-sans-serif',
         color: '#FF6992',
+        top: 30,
+        fontWeight: 'bold',
+        fontSize: 30,
+        marginLeft: 40,
       },
 
       reactLogo: {
@@ -165,7 +177,7 @@ const styles = StyleSheet.create({
          resizeMode: 'contain',    
          marginLeft: 6,       
          borderRadius: 8,
-         top: 10,
+         top: 60,
       },
 
       containerConteudo: {
@@ -175,55 +187,59 @@ const styles = StyleSheet.create({
 
        informacoesSimp: {
         width: 150,     
-        height: 83,    
+        height: 90,    
         resizeMode: 'contain',
         marginBottom: 10,
         marginLeft: 130,
-        top: -205,
+        top: -160,
       },
 
       sinopse: {
-        fontSize: 8.8,
-        marginLeft: 161, 
-        top: -216,
+        fontSize: 15,
+        marginLeft: 162, 
+        top: -170,
         maxWidth: 600,
-        color: '#FFFFFF',   
+        color: '#FFFFFF', 
+        lineHeight: 15,  
       },
 
       opiniao: {
-        fontSize: 8.7,
-        marginLeft: 5, 
-        top: -197,
-        maxWidth: 1860,
+        fontSize: 15.8,
+        marginLeft: 6, 
+        top: -156,
+        maxWidth: 1850,
         height:'100%',
         color: '#FFFFFF',
+        lineHeight: 19.2,
       },
 
         data: {
-        fontSize: 12,
-        marginLeft: 305,
+        fontSize: 14,
+        marginLeft: 300,
         color: '#FF3860',
         fontFamily: 'ui-sans-serif',
-        top: -190,
+        top: -150,
       },
 
-      titulo2:{
+      textoTodos:{
         gap: 8,
         marginBottom: 8,
         backgroundColor: '#00002B',
-        alignItems: 'center',
         fontFamily: 'ui-sans-serif',
         color: '#FF6992',
-        top: -120,
+        top: -100,
+        fontWeight: 'bold',
+        fontSize: 32,
+        marginLeft: 30,
         },
         
         filme2: {
-         width: 150,
-         height: 225, 
+         width: 170,
+         height: 220, 
          resizeMode: 'contain',    
-         marginLeft: 7,       
+         marginLeft: -3,       
          borderRadius: 8,
-         top: -105,
+         top: -65,
         },
 
         informacoesTodos: {
@@ -231,44 +247,47 @@ const styles = StyleSheet.create({
         height: 70,    
         resizeMode: 'contain',
         marginBottom: 10,
-        marginLeft: 119,
-        top: -320,
+        marginLeft: 120,
+        top: -275,
       },
 
       sinopse2: {
-        fontSize: 13,
-        marginLeft: 161, 
-        top: -330,
+        fontSize: 16,
+        marginLeft: 160, 
+        top: -280,
         maxWidth: 600,
-        color: '#FFFFFF', 
+        color: '#FFFFFF',
+        lineHeight: 18.9, 
       },
 
       opiniao2: {
-        fontSize: 12,
-        marginLeft: 5, 
-        top: -129,
+        fontSize: 15,
+        marginLeft: 7, 
+        top: -260,
         maxWidth: 1860,
         height:'100%',
         color: '#FFFFFF',
+        lineHeight: 21.2,
       },
 
       data2: {
-        fontSize: 14,
-        marginLeft: 310,
+        fontSize: 16,
+        marginLeft: 300,
         color: '#FF3860',
         fontFamily: 'ui-sans-serif',
-        top: -135,
+        top: -245,
       },
 
-      titulo3: {
+      textoCinco: {
         gap: 8,
         marginBottom: 8,
         backgroundColor: '#00002B',
-        alignItems: 'center',
         fontFamily: 'ui-sans-serif',
         color: '#FF6992',
-        top: 50,
-        fontSize: 30,
+        top: -180,
+        fontWeight: 'bold',
+        fontSize: 32,
+        marginLeft: 30,
       },
 
       filme3: {
@@ -277,33 +296,43 @@ const styles = StyleSheet.create({
          resizeMode: 'contain',    
          marginLeft: 7,       
          borderRadius: 8,
-         top: 80,
+         top: -160,
       },
 
       informacoescinco: {
          width: 150,     
-        height: 70,    
+        height: 75,    
         resizeMode: 'contain',
         marginBottom: 10,
         marginLeft: 124,
-        top: -134,
+        top: -370,
       },
 
       sinopse3: {
-        fontSize: 12,
+        fontSize: 17.3,
         marginLeft: 164, 
-        top: -140,
+        top: -375,
         maxWidth: 600,
         color: '#FFFFFF',
+        lineHeight: 18,
       },
 
       opiniao3: {
-        fontSize: 14,
-        marginLeft: 7, 
-        top: -129,
+        fontSize: 17,
+        marginLeft: 8, 
+        top: -350,
         maxWidth: 1860,
         height:'100%',
         color: '#FFFFFF',
+        lineHeight: 20,
+      },
+
+      data3: {
+        fontSize: 15,
+        marginLeft: 300,
+        color: '#FF3860',
+        fontFamily: 'ui-sans-serif',
+        top: -346,
       }
 
         })

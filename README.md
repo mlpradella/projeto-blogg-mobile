@@ -156,23 +156,26 @@ Liste as principais características e funcionalidades do seu aplicativo.
 ---
 ### Tela 4 (Romance) - Kamilly
 ### Descrição
- * (Coloque a descrição)
+ * Os componentes da tela é dedicado à exibição de detalhes e resenhas sobre os filmes.
+A tela possui uma estrutura vertical com destaque para os títulos, informações chave do filme (ano, duração, avaliação) e blocos de texto para sinopse e resenha completa.
+ E Utilizei um esquema de cores de alto contraste, com textos em rosa claro e rosa choque.
+ E foi pensado para ser uma versão de celular.
 ---
 
 ---
 ### Para quais funcionalidades foi pensada
- * (Coloque suas funcionalidades)
+ * Foi pensada para ser um blog, onde possamos ler os posts sobre os filmes, uma breve resenha e ver as avaliações dos filmes.
 
 ### Observações 
- * (Coloque as observações)
+ * Nos filmes, podemos ver a classificação de idade, duração e o ano de lançamento.
 
 ---
 ### Problemas/Dificuldades durante o projeto
 
-**coloque aqui**
+No começo tive algumas dificulades, como arrumar a imagem pois não funcionava, mudar a cor e a fonte dos títulos dos filmes e no alinhamento. Mas, no final deu tudo certo.
 
 ### Soluções para os problemas:
- (Adicione a solução ou atráves de imagens ou descritivo)
+Caso você queira mudar a cor e a fonte dos títulos, você deve no "ThemedText" sem estar dentro da "ThemedView".
 
 ---
 ### Imagens da Página:
