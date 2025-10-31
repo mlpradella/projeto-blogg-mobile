@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { StyleSheet, View, TouchableOpacity, Text } from 'react-native';
 import { useSharedValue } from 'react-native-reanimated';
 import Carousel from 'react-native-reanimated-carousel';
@@ -6,90 +6,112 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { window } from '@/constants/sizes';
 import { useRouter } from 'expo-router';
+import { useFonts } from 'expo-font';
+import * as SplashScreen from 'expo-splash-screen';
 
-const cardData = [
+SplashScreen.preventAutoHideAsync();
+
+const dadosCards = [
   {
-    title: 'AÇÃO',
-    description:
+    titulo: 'AÇÃO',
+    descricao:
       'Nada me empolga mais do que explosões, fugas e aventuras arriscadas! Cada cena me faz sentir a adrenalina correr nas veias! Neste post, você vai conhecer meus filmes de ação favoritos.',
-    author: 'Maria Luiza',
-    color: '#95b963',
-    route: '/(tabs)/acao',
+    autor: 'Maria Luiza',
+    cor: '#95b963',
+    rota: '/(tabs)/acao',
   },
   {
-    title: 'ANIMAÇÃO',
-    description:
+    titulo: 'ANIMAÇÃO',
+    descricao:
       'É incrível como cada história animada consegue ensinar e encantar ao mesmo tempo. Te convido a ver meus filmes de animação preferidos para passar o tempo. ^^',
-    author: 'Bianca Amorim',
-    color: '#7d5b8c',
-    route: '/(tabs)/animacao',
+    autor: 'Bianca Amorim',
+    cor: '#7d5b8c',
+    rota: '/(tabs)/animacao',
   },
   {
-    title: 'DRAMA',
-    description:
+    titulo: 'DRAMA',
+    descricao:
       'Filmes de drama falam sobre a vida real, sobre sentimentos e decisões que mudam tudo. Acho que se quer sentir uma dor emocional, meu post é para você...',
-    author: 'Allan',
-    color: '#5391c7',
-    route: '/(tabs)/drama',
+    autor: 'Allan',
+    cor: '#5391c7',
+    rota: '/(tabs)/drama',
   },
   {
-    title: 'ROMANCE',
-    description:
+    titulo: 'ROMANCE',
+    descricao:
       'Os filmes de romance me fazem sonhar, sorrir e até derramar algumas lágrimas. Vem se apaixonar comigo conhecendo aos meus filmes de romance preferidos <3',
-    author: 'Kamilly',
-    color: '#e994b7',
-    route: '/(tabs)/romace',
+    autor: 'Kamilly',
+    cor: '#e994b7',
+    rota: '/(tabs)/romace',
   },
   {
-    title: 'TERROR',
-    description:
+    titulo: 'TERROR',
+    descricao:
       'Quanto mais suspense e mistério, melhor! Gosto de mergulhar no clima sombrio e descobrir o que se esconde nas sombras. Se você tem esse sentimento vendo filmes de terror, conheça minhas recomendações!!',
-    author: 'Maykon',
-    color: '#a82223',
-    route: '/(tabs)/terror',
+    autor: 'Maykon',
+    cor: '#a82223',
+    rota: '/(tabs)/terror',
   },
 ];
 
-export default function HomeScreen() {
-  const progress = useSharedValue<number>(0);
-  const router = useRouter();
+export default function TelaInicial() {
+  const progresso = useSharedValue<number>(0);
+  const navegar = useRouter();
 
-  const renderItem = React.useCallback(
+  const [fonteCarregada] = useFonts({
+    'Fredoka-Regular': require('../../assets/fonts/Fredoka-Regular.ttf'),
+  });
+
+  useEffect(() => {
+    if (fonteCarregada) {
+      SplashScreen.hideAsync();
+    }
+  }, [fonteCarregada]);
+
+  if (!fonteCarregada) {
+    return null;
+  }
+
+  const renderizarItem = React.useCallback(
     ({ item }: { item: any }) => (
-      <View style={[styles.card, { backgroundColor: item.color }]}>
-        <Text style={styles.title}>{item.title}</Text>
-        <Text style={styles.description}>{item.description}</Text>
-        <Text style={styles.author}>by {item.author}</Text>
+      <View style={[estilos.cartao, { backgroundColor: item.cor }]}>
+        <Text style={estilos.titulo}>{item.titulo}</Text>
+        <Text style={estilos.descricao}>{item.descricao}</Text>
+        <Text style={estilos.autor}>by {item.autor}</Text>
 
         <TouchableOpacity
-          style={styles.buttonCard}
+          style={estilos.botaoCartao}
           activeOpacity={0.8}
-          onPress={() => router.push(item.route)}
+          onPress={() => navegar.push(item.rota)}
         >
-          <Text style={styles.buttonText}>Ver Post</Text>
+          <Text style={estilos.textoBotao}>Ver Post</Text>
         </TouchableOpacity>
       </View>
     ),
-    [router]
+    [navegar]
   );
 
   return (
-    <View style={styles.container}>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="subtitle">new blog!</ThemedText>
-        <ThemedText type="title" style={styles.fonte}>
+    <View style={estilos.container}>
+      <ThemedView style={estilos.cabecalho}>
+        <ThemedText type="subtitle" style={estilos.fonteGlobal}>
+          new blog!
+        </ThemedText>
+        <ThemedText type="title" style={[estilos.fonteTitulo, estilos.fonteGlobal]}>
           POCSCAST
         </ThemedText>
-        <ThemedText type="subtitle">MOVIES</ThemedText>
-        <ThemedText type="subtitle" style={styles.subtitulo}>
+        <ThemedText type="subtitle" style={estilos.fonteGlobal}>
+          MOVIES
+        </ThemedText>
+        <ThemedText type="subtitle" style={[estilos.subtitulo, estilos.fonteGlobal]}>
           principais destaques
         </ThemedText>
       </ThemedView>
 
-      <View style={styles.carouselContainer}>
+      <View style={estilos.containerCarrossel}>
         <Carousel
           autoPlayInterval={2500}
-          data={cardData}
+          data={dadosCards}
           height={520}
           loop
           pagingEnabled
@@ -100,53 +122,63 @@ export default function HomeScreen() {
             parallaxScrollingScale: 0.8,
             parallaxScrollingOffset: 50,
           }}
-          onProgressChange={progress}
-          renderItem={renderItem}
+          onProgressChange={progresso}
+          renderItem={renderizarItem}
         />
       </View>
 
-      <View style={styles.recommendationContainer}>
-        <Text style={styles.recommendationText}>
+      <View style={estilos.containerRecomendacao}>
+        <Text style={estilos.textoRecomendacao}>
           Conheça as recomendações da semana :)
         </Text>
 
         <TouchableOpacity
-          style={styles.button}
+          style={estilos.botaoRecomendacao}
           activeOpacity={0.8}
-          onPress={() => router.push('/(tabs)/recomendacao')}
+          onPress={() => navegar.push('/(tabs)/recomendacao')}
         >
-          <Text style={styles.buttonText}>clique aqui</Text>
+          <Text style={estilos.textoBotao}>clique aqui</Text>
         </TouchableOpacity>
       </View>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  subtitulo: {
-    marginTop: 12,
-    fontSize: 15,
-  },
-  fonte: {
-    fontFamily: 'ui-sans-serif',
-  },
+const estilos = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#00002B',
   },
-  titleContainer: {
+
+  cabecalho: {
     alignItems: 'center',
     backgroundColor: '#00002B',
     paddingVertical: 1,
   },
-  carouselContainer: {
+
+  fonteGlobal: {
+    fontFamily: 'Fredoka-Regular',
+  },
+
+  fonteTitulo: {
+    fontFamily: 'Fredoka-Regular',
+  },
+
+  subtitulo: {
+    marginTop: 12,
+    fontSize: 15,
+    fontFamily: 'Fredoka-Regular',
+  },
+
+  containerCarrossel: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: 100,
     marginBottom: 60,
   },
-  card: {
+
+  cartao: {
     flex: 1,
     marginHorizontal: 30,
     borderRadius: 20,
@@ -158,27 +190,37 @@ const styles = StyleSheet.create({
     shadowRadius: 3.84,
     elevation: 5,
   },
-  title: {
+
+  titulo: {
     fontSize: 30,
     color: '#fff',
-    fontWeight: 'bold',
     textAlign: 'center',
     marginBottom: 10,
+    fontFamily: 'Fredoka-Regular',
+    fontWeight: '700',
+    textShadowColor: 'rgba(0, 0, 0, 0.25)',
+    textShadowOffset: { width: 1, height: 1 },
+    textShadowRadius: 2,
   },
-  description: {
+
+  descricao: {
     color: '#fff',
     fontSize: 30,
     textAlign: 'center',
     lineHeight: 30,
     flexGrow: 1,
+    fontFamily: 'Fredoka-Regular',
   },
-  author: {
+
+  autor: {
     color: '#fff',
     fontSize: 20,
     textAlign: 'center',
     marginVertical: 10,
+    fontFamily: 'Fredoka-Regular',
   },
-  buttonCard: {
+
+  botaoCartao: {
     width: '100%',
     backgroundColor: 'rgba(255,255,255,0.2)',
     borderRadius: 8,
@@ -187,29 +229,34 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  buttonText: {
+
+  textoBotao: {
     color: '#fff',
     fontSize: 16,
     fontWeight: '600',
+    fontFamily: 'Fredoka-Regular',
   },
-  recommendationContainer: {
+
+  containerRecomendacao: {
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 30,
     marginBottom: 25,
-
   },
-  recommendationText: {
+
+  textoRecomendacao: {
     color: '#FFFFFF',
     fontSize: 16,
     marginBottom: 10,
     marginTop: 10,
+    fontFamily: 'Fredoka-Regular',
   },
-  button: {
+
+  botaoRecomendacao: {
     borderWidth: 1,
     borderColor: '#FFFFFF',
     borderRadius: 8,
     paddingVertical: 10,
     paddingHorizontal: 30,
-  }
+  },
 });
