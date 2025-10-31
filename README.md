@@ -43,7 +43,7 @@ Este é um site de blog de filmes com uma estética separada por cores para cada
  * Maykon - Terror
 
 **Única página que contém**
- * Bianca - Recomendações de filmes 
+ * Bianca P. - Recomendações de filmes 
  Api: ??
 
 ## Fᴜɴᴄɪᴏɴᴀʟɪᴅᴀᴅᴇs
@@ -119,7 +119,7 @@ Liste as principais características e funcionalidades do seu aplicativo.
 ---
 ### Imagens da Página:
 
-!!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
+!!!BASTA COLOCAR SUA IMAGEM NO assets, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
 
  ![Tela1](assentsREADME/imagemquevcquer.png)
 
@@ -203,9 +203,9 @@ acho que no começo tive um pouco de difiiculdade de entender oque era hml e oq 
 
 ---
 ### Imagens da Página:
-![Print da Tela Inicial ](./assets/images/emagem1.png)
-![Print da Tela Inicial ](./assets/images/emagem2.png)
-![Print da Tela Inicial ](./assets/images/emagem3.png)
+![Print da Tela Inicial ](../mobile/assets/images/emagem1.png)
+![Print da Tela Inicial ](../mobile/assets/images/emagem2.png)
+![Print da Tela Inicial ](../mobile/assets/images/emagem3.png)
 ### Tela 6 (Animações) - Bianca Amorim
 ### Descrição
  * (Coloque a descrição)
@@ -258,7 +258,7 @@ acho que no começo tive um pouco de difiiculdade de entender oque era hml e oq 
 
 !!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
 
- ![Tela1](assentsREADME/imagemquevcquer.png)
+ ![Tela1](assetsREADME/imagemquevcquer.png)
 
  (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
 
