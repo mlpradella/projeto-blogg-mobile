@@ -43,7 +43,7 @@ Este é um site de blog de filmes com uma estética separada por cores para cada
  * Maykon - Terror
 
 **Única página que contém**
- * Bianca - Recomendações de filmes 
+ * Bianca P. - Recomendações de filmes 
  Api: ??
 
 ## Fᴜɴᴄɪᴏɴᴀʟɪᴅᴀᴅᴇs
@@ -119,7 +119,7 @@ Liste as principais características e funcionalidades do seu aplicativo.
 ---
 ### Imagens da Página:
 
-!!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
+!!!BASTA COLOCAR SUA IMAGEM NO assets, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
 
  ![Tela1](assentsREADME/imagemquevcquer.png)
 
@@ -189,30 +189,26 @@ Caso você queira mudar a cor e a fonte dos títulos, você deve no "ThemedText"
 ---
 ### Tela 5 (Terror) - Maykon
 ### Descrição
- * (Coloque a descrição)
+ * (o projeto foi pensado com o intuito de ser uma versao de celular do projeto de front, com as mesmas caracteristicas, voltada a ser um projeto que coloca os top filmes da atualidade com as minhas opinioes e avaliaçoes, junto de um breve resumo das informaçoes do filme como ano de lançamento e duração etc...)
 ---
 ### Para quais funcionalidades foi pensada
- * (Coloque suas funcionalidades)
+ * (foi pensada para ser um blog de posts de opinioes sobre filmes, recomendando filmes q gosta e colocando notas avaliativas pra cada filme e dando um breve resuminho sobre oque é o filme)
 
 ### Observações 
- * (Coloque as observações)
+ * (tem informaçoes do filme como idade minima, duraçao e ano de lançamento do filme)
 ---
 ### Problemas/Dificuldades durante o projeto
 
-**coloque aqui**
+acho que no começo tive um pouco de difiiculdade de entender oque era hml e oq era css e java por causa do formato diferente do react native mas depois eu peguei o jeito, acho q a principal dificuldade minha foi colocar a tela com "scroll" por que eu nao fazia ideia de como fazer, pesquisei na internet e nao achei mas a minha amiga maria luiza me ajudou e me ensinou como fazer.
 
 ### Soluções para os problemas:
- (Adicione a solução ou atráves de imagens ou descritivo)
+ (aprendi nesse projeto que sempre se estiver tudo vermelho absolutamente do nada é só vc dar "crtl +shift + p" e dar reload no servidor pq as vezes ele buga mesmo )
 
 ---
 ### Imagens da Página:
-!!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
-
- ![Tela1](assentsREADME/imagemquevcquer.png)
-
- (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
-
----
+![Print da Tela Inicial ](../mobile/assentsREADME/emagem1.png)
+![Print da Tela Inicial ](../mobile/assentsREADME/emagem2.png)
+![Print da Tela Inicial ](../mobile/assentsREADME/emagem3.png)
 ### Tela 6 (Animações) - Bianca Amorim
 ### Descrição
  * (Coloque a descrição)
@@ -265,11 +261,8 @@ Caso você queira mudar a cor e a fonte dos títulos, você deve no "ThemedText"
 
 !!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
 
- ![Tela1](assentsREADME/imagemquevcquer.png)
+ ![Tela1](assetsREADME/imagemquevcquer.png)
 
  (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
 
 ---
-
-
-
