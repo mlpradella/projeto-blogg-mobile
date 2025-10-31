@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  # 𐔌 . ⋮ 𝒫ℴ𝒸𝓈𝒸𝒶𝓈𝓉 ℳℴ𝓋𝒾ℯ𝓈 .ᐟ ֹ ₊ ꒱
 
 ## Iɴᴅɪᴄᴇs
@@ -264,3 +265,5 @@ acho que no começo tive um pouco de difiiculdade de entender oque era hml e oq 
  (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
 
 ---
+=======
+>>>>>>> 99acc12f3b5ba30043754fa8d1e584bbc81502de
