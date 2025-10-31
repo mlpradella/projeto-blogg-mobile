@@ -203,9 +203,9 @@ acho que no começo tive um pouco de difiiculdade de entender oque era hml e oq 
 
 ---
 ### Imagens da Página:
-![Print da Tela Inicial ](../mobile/assets/images/emagem1.png)
-![Print da Tela Inicial ](../mobile/assets/images/emagem2.png)
-![Print da Tela Inicial ](../mobile/assets/images/emagem3.png)
+![Print da Tela Inicial ](../assentsREADME/emagem1.png)
+![Print da Tela Inicial ](../assentsREADME/emagem2.png)
+![Print da Tela Inicial ](../assentsREADME/emagem3.png)
 ### Tela 6 (Animações) - Bianca Amorim
 ### Descrição
  * (Coloque a descrição)
