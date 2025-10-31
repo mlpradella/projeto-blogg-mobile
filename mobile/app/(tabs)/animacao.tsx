@@ -47,11 +47,10 @@ export default function HomeScreen() {
           Gosto muito da animação e história geral do filme, o final não 
           é totalmente esperado pelos espectadores e digo isso por 
           experiência própria. Mesmo sendo um filme considerado infantil, 
-          as músicas são boas e algumas falam sobre problemas pessoais como 
+          as músicas são boas e várias falam sobre problemas pessoais como 
           comparação e o sentimento de solidão.
           Os personagens possuem um motivo existente por trás das ações, 
-          não os deixando jogados e monótonos como acontece em alguns outros 
-          programas.
+          não os deixando jogados e monótonos no meio dos acontecimentos.
         </ThemedText>
 
         <ThemedText type='default' style={styles.data1}>
@@ -79,7 +78,11 @@ export default function HomeScreen() {
 
           <View style={styles.sinopse2coluna}>
             <ThemedText type='default' style={styles.sinopse2}>
-              A princesa Merida deve seguir os costumes do seu reino e tornar-se rainha ao lado do cavalheiro que conseguir a sua mão durante um torneio de arco e flecha. Porém, a jovem está determinada a trilhar seu próprio caminho e desafia a tradição ancestral.
+              A princesa Merida deve seguir os costumes do seu reino e 
+              tornar-se rainha ao lado do cavalheiro que conseguir a 
+              sua mão durante um torneio de arco e flecha. Porém, a 
+              jovem está determinada a trilhar seu próprio caminho e 
+              desafia a tradição ancestral.
             </ThemedText>
           </View>
         </View>
@@ -130,7 +133,7 @@ export default function HomeScreen() {
         </View>
 
         <ThemedText type='default' style={styles.opiniao3}>
-        Mesmo sendo um filme relativamente antigo, a animação e 
+        Mesmo sendo um filme "antigo", a animação e 
         a história são muito boas. Os personagens são inocentes 
         e fofos, mesmo assim entregando certa mensagem para o 
         público que assistiu.
@@ -138,7 +141,7 @@ export default function HomeScreen() {
         em que a amizade que ambos tiveram é “posta a prova” para 
         salvarem o vilarejo.
         A ideia principal é muito interessante por se tratar de 
-        algo não visto ou pensado normalmente, tendo em base um 
+        algo não pensado normalmente, tendo em base um 
         peixinho dourado que se transforma em uma humana.
         </ThemedText>
 
@@ -168,7 +171,8 @@ const styles = StyleSheet.create({
   },
   titulo: {
     color: '#AB51DF',
-    fontSize: 27,
+    fontSize: 35,
+    marginTop: 30,
     fontWeight: 'bold',
     fontFamily: 'ui-sans-serif',
     backgroundColor: '#00002B',
