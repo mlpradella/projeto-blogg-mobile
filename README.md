@@ -180,12 +180,10 @@ Caso você queira mudar a cor e a fonte dos títulos, você deve no "ThemedText"
 ---
 ### Imagens da Página:
 
-!!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
-
- ![Tela1](assentsREADME/imagemquevcquer.png)
-
- (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
-
+![Tela1] (assentsREADME/imagem-inicial.png)
+![Tela2] (assentsREADME/imagem-meio.png)
+![Tela3] (assentsREADME/imagem-final.png)
+![Tela4] (assentsREADME/imagem-final-2.png)
 ---
 ### Tela 5 (Terror) - Maykon
 ### Descrição
