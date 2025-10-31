@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a116dbfc8d5fced1be825e47721a6fa8c4cddfee
  # 𐔌 . ⋮ 𝒫ℴ𝒸𝓈𝒸𝒶𝓈𝓉 ℳℴ𝓋𝒾ℯ𝓈 .ᐟ ֹ ₊ ꒱
 
 ## Iɴᴅɪᴄᴇs
@@ -161,10 +164,10 @@ Liste as principais características e funcionalidades do seu aplicativo.
 A tela possui uma estrutura vertical com destaque para os títulos, informações chave do filme (ano, duração, avaliação) e blocos de texto para sinopse e resenha completa.
  E Utilizei um esquema de cores de alto contraste, com textos em rosa claro e rosa choque.
  E foi pensado para ser uma versão de celular.
----
 
 ---
 ### Para quais funcionalidades foi pensada
+
  * Foi pensada para ser um blog, onde possamos ler os posts sobre os filmes, uma breve resenha e ver as avaliações dos filmes.
 
 ### Observações 
@@ -172,19 +175,19 @@ A tela possui uma estrutura vertical com destaque para os títulos, informaçõe
 
 ---
 ### Problemas/Dificuldades durante o projeto
-
-No começo tive algumas dificulades, como arrumar a imagem pois não funcionava, mudar a cor e a fonte dos títulos dos filmes e no alinhamento. Mas, no final deu tudo certo.
+* No começo tive algumas dificulades, como arrumar a imagem pois não funcionava, mudar a cor e a fonte dos títulos dos filmes e no alinhamento. Mas, no final deu tudo certo.
 
 ### Soluções para os problemas:
-Caso você queira mudar a cor e a fonte dos títulos, você deve no "ThemedText" sem estar dentro da "ThemedView".
+* Caso você queira mudar a cor e a fonte dos títulos, você deve no "ThemedText" sem estar dentro da "ThemedView".
 
 ---
 ### Imagens da Página:
 
-![Tela1] (assentsREADME/imagem-inicial.png)
-![Tela2] (assentsREADME/imagem-meio.png)
-![Tela3] (assentsREADME/imagem-final.png)
-![Tela4] (assentsREADME/imagem-final-2.png)
+![Tela1] (.mobile/assentsREADME/imagem-inicial.png)
+![Tela2] (.mobile/assentsREADME/imagem-meio.png)
+![Tela3] (.mobile/assentsREADME/imagem-final.png)
+![Tela4] (.mobile/assentsREADME/imagem-final-2.png)
+
 ---
 ### Tela 5 (Terror) - Maykon
 ### Descrição
@@ -265,5 +268,8 @@ acho que no começo tive um pouco de difiiculdade de entender oque era hml e oq 
  (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
 
 ---
+<<<<<<< HEAD
 =======
 >>>>>>> 99acc12f3b5ba30043754fa8d1e584bbc81502de
+=======
+>>>>>>> a116dbfc8d5fced1be825e47721a6fa8c4cddfee
