@@ -1,17 +1,13 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> a116dbfc8d5fced1be825e47721a6fa8c4cddfee
  # 𐔌 . ⋮ 𝒫ℴ𝒸𝓈𝒸𝒶𝓈𝓉 ℳℴ𝓋𝒾ℯ𝓈 .ᐟ ֹ ₊ ꒱
 
 ## Iɴᴅɪᴄᴇs
 
-- [Integrantes do grupo:](#Integrantes-do-grupo)
+- [Integrantes do grupo](#Integrantes-do-grupo)
 - [Protótipo Figma](#link-do-protótipo-no-figma)
 - [Sobre o Blog](#sobre-o-blog)
 - [Observações](#observações)
-- [Funcionalidades ](#funcionalidades)
-- [Tecnologias Utilizadas ](#tecnologias-utilizadas)
+- [Funcionalidades](#funcionalidades)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Páginas](#páginas)
 
 
@@ -52,10 +48,10 @@ Este é um site de blog de filmes com uma estética separada por cores para cada
 
 ## Fᴜɴᴄɪᴏɴᴀʟɪᴅᴀᴅᴇs
 
-Liste as principais características e funcionalidades do seu aplicativo.
+Principais características e funcionalidades do seu aplicativo.
 * Integração com API 
 * Navegação intuitiva 
-* É um site público sem a necessidade de login.
+* Site público sem a necessidade de login.
 * Contém uma área de "Recomendações de Filmes"
 
 ---
