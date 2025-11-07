@@ -101,31 +101,33 @@ Principais características e funcionalidades do seu aplicativo.
 ---
 ### Tela 2 (Ação) - Maria Luiza 
 ### Descrição
- * (Coloque a descrição)
+ * A pagina tem três filmes do gênero ação, todos esccolhidos por mim, sobre os meus gostos. Existe em cada filme uma avaliação, tempo de duração, sinopse e opnião.
 
 ---
 ### Para quais funcionalidades foi pensada
- * (Coloque suas funcionalidades)
+ * Tem o objetivo de recomendar três filmes de ação para aqueles que gostam de adrenalina e emoção. 
 
 ### Observações 
- * (Coloque as observações)
+ * Os três filmes são de extrema ação, em palavras resumidas, tiro, porrada e bomba, muitas cenas que talves necessitassem de blur, mas o filme é muito bom para ser estragado. Os filmes são Tropa de Elite, Busca Implacavel e Invasão a casa branca. 
 
 ---
 ### Problemas/Dificuldades durante o projeto
 
-**coloque aqui**
+**Umas das minhas principais dificuldades, foi a questão de colocar o texto ao lado da imagem, pois o texto cortava, fazendo sumir uma parte da escrita, outra dificuldade foi deixar o site dinâmico**
 
 ### Soluções para os problemas:
- (Adicione a solução ou atráves de imagens ou descritivo)
+ A questão do texto ao lado da imagem, consegui resolver após arrumar o tamanho da imagem e colocar apenas um styles para as três sinopses, antes havia uma para cada. Deixar o site dinâmico foi algo quue eu não consegui resolver, tentei de diversas formas, mas nenhuma foi certa. 
 
 ---
 ### Imagens da Página:
 
-!!!BASTA COLOCAR SUA IMAGEM NO assets, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
 
- ![Tela1](./mobile/)
 
- (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
+ ![Tela1](./mobile/assentsREADME/filme1-acao.png)
+ ![Tela2](./mobile/assentsREADME/filme2-acao.png)
+ ![Tela3](./mobile/assentsREADME/filme3-acao.png)
+
+
 
 ---
 
@@ -162,31 +164,34 @@ React Native, conseguindo entender aos poucos a melhor maneira de editar as cois
 ---
 ### Tela 4 (Drama) - Allan
 ### Descrição
- * (Coloque a descrição)
+ * Possui três filmes da minha preferência de dramas, junto com
+ a sinopse, avaliação e resenha pessoal.
 ---
 ### Para quais funcionalidades foi pensada
- * (Coloque suas funcionalidades)
+ * Foi feito pensando em recomendar filmes que sejam de drama para pessoas interessadas pelo gênero.
 
 ### Observações 
- * (Coloque as observações)
+ * Todos os filmes são LGBT nos quais são meus favoritos de drama sendo eles: As vantagens de ser invisível, Sociedade dos Poetas Mortos e Stand by me, Segundo que eu deixei um espaço na parte superior acima do Drama para ser compatível quando abrir em algum celular e não ficar em cima.
 
 ---
 ### Problemas/Dificuldades durante o projeto
 
-**coloque aqui**
+**Minha principal dificuldade foi a questão de centralização e de deixar a página de forma dinâmica**
 
 ### Soluções para os problemas:
- (Adicione a solução atráves de imagens ou descritivo)
+ Tentei de muitas formas deixar a página de forma dinâmica e não algo feito manualmente (o que só deu certo para o primeiro filme) Os outros dois não fui capacitado de conseguir, assim apenas o primeiro filme consegui resolver esse problema através de view 
 
 ---
 ### Imagens da Página:
 
-!!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
+ ![Tela1](./mobile/assentsREADME/filme1-drama.png)
+---
 
- ![Tela1](./mobile/)
+ ![Tela1](./mobile/assentsREADME/filme2-drama.png)
+---
 
- (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
-
+ ![Tela1](./mobile/assentsREADME/filme3-drama.png)
+ 
 ---
 ### Tela 5 (Romance) - Kamilly
 ### Descrição
@@ -241,34 +246,6 @@ acho que no começo tive um pouco de difiiculdade de entender oque era hml e oq 
 ![Print da Tela Inicial ](./mobile/assentsREADME/emagem1.png)
 ![Print da Tela Inicial ](./mobile/assentsREADME/emagem2.png)
 ![Print da Tela Inicial ](./mobile/assentsREADME/emagem3.png)
-### Tela 6 (Animações) - Bianca Amorim
-### Descrição
- * (Coloque a descrição)
----
-
-### Para quais funcionalidades foi pensada
- * (Coloque suas funcionalidades)
-
-### Observações 
- * (Coloque as observações)
-
----
-### Problemas/Dificuldades durante o projeto
-
-**coloque aqui**
-
-### Soluções para os problemas:
- (Adicione a solução ou atráves de imagens ou descritivo)
-
----
-### Imagens da Página:
-
-
-!!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
-
- ![Tela1](./mobile/)
-
- (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
 
 ---
 ### Tela 7 (Recomendações) - Bianca Pereira
