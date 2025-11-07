@@ -121,13 +121,11 @@ Principais características e funcionalidades do seu aplicativo.
 ---
 ### Imagens da Página:
 
-
-
  ![Tela1](./mobile/assentsREADME/filme1-acao.png)
+ ---
  ![Tela2](./mobile/assentsREADME/filme2-acao.png)
+ ---
  ![Tela3](./mobile/assentsREADME/filme3-acao.png)
-
-
 
 ---
 
@@ -158,7 +156,9 @@ React Native, conseguindo entender aos poucos a melhor maneira de editar as cois
 ### Imagens da Página:
 
  ![Filme1](./mobile/assentsREADME/mobile-animacao1.png)
+ ---
  ![Filme2](./mobile/assentsREADME/mobile-animacao2.png)
+ ---
  ![Filme3](./mobile/assentsREADME/mobile-animacao3.png)
 
 ---
@@ -218,10 +218,13 @@ A tela possui uma estrutura vertical com destaque para os títulos, informaçõe
 ---
 ### Imagens da Página:
 
-![Tela1] (.mobile/assentsREADME/imagem-inicial.png)
-![Tela2] (.mobile/assentsREADME/imagem-meio.png)
-![Tela3] (.mobile/assentsREADME/imagem-final.png)
-![Tela4] (.mobile/assentsREADME/imagem-final-2.png)
+![Tela1](./mobile/assentsREADME/imagem-inicial.png)
+---
+![Tela2](./mobile/assentsREADME/imagem-meio.png)
+---
+![Tela3](./mobile/assentsREADME/imagem-final.png)
+---
+![Tela4](./mobile/assentsREADME/imagem-final-2.png)
 
 ---
 ### Tela 6 (Terror) - Maykon
@@ -244,7 +247,9 @@ acho que no começo tive um pouco de difiiculdade de entender oque era hml e oq 
 ---
 ### Imagens da Página:
 ![Print da Tela Inicial ](./mobile/assentsREADME/emagem1.png)
+---
 ![Print da Tela Inicial ](./mobile/assentsREADME/emagem2.png)
+---
 ![Print da Tela Inicial ](./mobile/assentsREADME/emagem3.png)
 
 ---
