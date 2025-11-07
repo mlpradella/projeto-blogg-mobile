@@ -31,7 +31,9 @@
 
 ## Sᴏʙʀᴇ ᴏ Bʟᴏɢ
 
-Este é um site de blog de filmes com uma estética separada por cores para cada filme. Foi desenvolvido com o objetivo de mostrar filmes em base dos gêneros, junto com uma página de recomendações de acordo com o que a pessoa desejar.
+Este é um site de blog de filmes com uma estética separada por cores para cada filme. 
+Foi desenvolvido com o objetivo de mostrar filmes em base dos gêneros, junto com uma 
+página de recomendações de acordo com o que a pessoa desejar.
 
 ## Oʙsᴇʀᴠᴀᴄ̧ᴏ̃ᴇs
 **Em determinadas páginas não há utilização de API, sendo elas:**
@@ -92,7 +94,7 @@ Principais características e funcionalidades do seu aplicativo.
 
 !!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
 
- ![Tela1](assentsREADME/imagemquevcquer.png)
+ ![Tela1](./mobile/)
 
  (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
 
@@ -121,12 +123,44 @@ Principais características e funcionalidades do seu aplicativo.
 
 !!!BASTA COLOCAR SUA IMAGEM NO assets, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
 
- ![Tela1](assentsREADME/imagemquevcquer.png)
+ ![Tela1](./mobile/)
 
  (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
 
 ---
-### Tela 3 (Drama) - Allan
+
+### Tela 3 (Animação) - Bianca Amorim
+### Descrição
+ * A página possui três filmes de animação junto com a sinopse, avaliação,
+ tempo de filme e opinião própria sobre os filmes escolhidos.
+
+---
+### Para quais funcionalidades foi pensada
+ * Tem o intuito de recomendar as animações para alguém que se interesse pela promissa
+ dada.
+
+### Observações 
+ * Tem três filmes separados, sendo o Noiva Cadáver, Merida e Ponyo.
+
+---
+### Problemas/Dificuldades durante o projeto
+
+* Tive leves dificuldades de começo por causa da falta de costume em programação
+React Native, conseguindo entender aos poucos a melhor maneira de editar as coisas e programar
+
+### Soluções para os problemas:
+ * Conseguir arrumar pesquisando sobre os códigos, apagando e adicionando coisas no chute até
+ que desse certo e, se ainda desse problema, perguntava ao Copilot sobre.
+
+---
+### Imagens da Página:
+
+ ![Filme1](./mobile/assentsREADME/mobile-animacao1.png)
+ ![Filme2](./mobile/assentsREADME/mobile-animacao2.png)
+ ![Filme3](./mobile/assentsREADME/mobile-animacao3.png)
+
+---
+### Tela 4 (Drama) - Allan
 ### Descrição
  * (Coloque a descrição)
 ---
@@ -149,12 +183,12 @@ Principais características e funcionalidades do seu aplicativo.
 
 !!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
 
- ![Tela1](assentsREADME/imagemquevcquer.png)
+ ![Tela1](./mobile/)
 
  (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
 
 ---
-### Tela 4 (Romance) - Kamilly
+### Tela 5 (Romance) - Kamilly
 ### Descrição
  * Os componentes da tela é dedicado à exibição de detalhes e resenhas sobre os filmes.
 A tela possui uma estrutura vertical com destaque para os títulos, informações chave do filme (ano, duração, avaliação) e blocos de texto para sinopse e resenha completa.
@@ -185,7 +219,7 @@ A tela possui uma estrutura vertical com destaque para os títulos, informaçõe
 ![Tela4] (.mobile/assentsREADME/imagem-final-2.png)
 
 ---
-### Tela 5 (Terror) - Maykon
+### Tela 6 (Terror) - Maykon
 ### Descrição
  * (o projeto foi pensado com o intuito de ser uma versao de celular do projeto de front, com as mesmas caracteristicas, voltada a ser um projeto que coloca os top filmes da atualidade com as minhas opinioes e avaliaçoes, junto de um breve resumo das informaçoes do filme como ano de lançamento e duração etc...)
 ---
@@ -232,12 +266,12 @@ acho que no começo tive um pouco de difiiculdade de entender oque era hml e oq 
 
 !!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
 
- ![Tela1](assentsREADME/imagemquevcquer.png)
+ ![Tela1](./mobile/)
 
  (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
 
 ---
-### Tela 6 (Recomendações) - Bianca Pereira
+### Tela 7 (Recomendações) - Bianca Pereira
 ### Descrição
  * (Coloque a descrição)
 ---
@@ -259,13 +293,8 @@ acho que no começo tive um pouco de difiiculdade de entender oque era hml e oq 
 
 !!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
 
- ![Tela1](assetsREADME/imagemquevcquer.png)
+ ![Tela1](./mobile/)
 
  (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
 
 ---
-<<<<<<< HEAD
-=======
->>>>>>> 99acc12f3b5ba30043754fa8d1e584bbc81502de
-=======
->>>>>>> a116dbfc8d5fced1be825e47721a6fa8c4cddfee
