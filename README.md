@@ -72,31 +72,29 @@ Principais características e funcionalidades do seu aplicativo.
 ### Tela 1 (Tela de Início) - Giovanna
 
 ### Descrição
- * (Coloque a descrição)
+ * Esta página é a que conecta todas as outras páginas do projeto. Nela, temos um layout mais intuitivo e simples, com um sistema de cards/carrossel que apresenta pequenas descrições sobre cada post do blog e as respectivas opiniões dos blogueiros, além de uma área com um link para a página alternativa de recomendações gerais.
 ---
 ### Para quais funcionalidades foi pensada
 
- * (Coloque suas funcionalidades)
+ * conectar todas as páginas em um único lugar e ser um sistema fácil de interagir
 
 ### Observações 
- * (Coloque as observações)
+ * Os cards são compostos por uma pequena descrição do post de cada gênero de filme, e o acesso ao post é feito por meio do botão localizado ao final do card.
 ---
 ### Problemas/Dificuldades durante o projeto
 
+* A principal dificuldade foi a implementação das informações dentro dos cards e a criação do carrossel interativo.
 
-**coloque aqui**
+---
 
 ### Soluções para os problemas:
- (Adicione a solução ou atráves de imagens ou descritivo)
+* Para a resolução desses problemas, foi necessária a criação de consts que armazenavam as informações dos cards e eram aplicadas no código em integração com o componente de card. O carrossel foi desenvolvido a partir de diversos testes e aprimorado ao longo do projeto.
 
 ---
 ### Imagens da Página:
 
-!!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
+ ![Tela1](./mobile/assentsREADME/telainicial.png)
 
- ![Tela1](./mobile/)
-
- (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
 
 ---
 ### Tela 2 (Ação) - Maria Luiza 
