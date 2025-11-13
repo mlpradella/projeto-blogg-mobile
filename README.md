@@ -253,28 +253,34 @@ acho que no começo tive um pouco de difiiculdade de entender oque era hml e oq 
 ---
 ### Tela 7 (Recomendações) - Bianca Pereira
 ### Descrição
- * (Coloque a descrição)
+ * Minha tela apresenta uma recomendação de cada um dos gêneros apresentados, que foram escolhidos por mim e que gosto bastante.
 ---
 ### Para quais funcionalidades foi pensada
- * (Coloque suas funcionalidades)
+ * Fiz com o propósito de mostra as melhores recomendações "daquela semana", então apresenta um recomendação de cada um dos gêneros das outras páginas, e coloquei uma API externa que mostra uma "descoberta" de um filme novo.
 
 ### Observações 
- * (Coloque as observações)
+ * Os textos que aparecem na parte de baixo de cada um dos posters dos filmes, são opiniões reais minhas e representam o que achei sobre cada um deles, o mesmo serve para as valiações(representadas pelas estrelas), não são uma avaliação real com embasamento, apenas é a avaliação que acho que se emcaixa com o que achei sobre o filme.
 ---
 ### Problemas/Dificuldades durante o projeto
-
-**coloque aqui**
+* De forma geral o principal problema que tive foi em colcar uma api no projeto, usei todo tipo de IA mas nenhuma dava certo, então percebi que estava pedindo algo muito complexo, estão pedi algo mais simples, e flexível.
 
 ### Soluções para os problemas:
- (Adicione a solução ou atráves de imagens ou descritivo)
+ * Então para resolver, fiz apenas um botão que mostra um novo filme que ainda não tinha aparecido no projeto.
 
 ---
 ### Imagens da Página:
 
-!!!BASTA COLOCAR SUA IMAGEM NO assentsREADME, copiar o nome dela e colocar no lugar do "imagemque vc quer" abaixo: !!!
+ ![Tela de recomendaao](./mobile/assentsREADME/tela_recomendacao.png)
 
- ![Tela1](./mobile/)
+ ![Tela de recomendaao](./mobile/assentsREADME/tela_recomendacao2.png)
 
- (se precisar de mais de uma imagem a coloque copiando o modelo anterior e sobre o que se trata ex: primeiro filme, segundo filme...)
+ ![Tela de recomendaao](./mobile/assentsREADME/tela_recomendacao3.png)
+
+### Sobre a API
+ * Como a API aparece
+ ![API](./mobile/assentsREADME/api.png)
+
+ * API funcionando
+ ![API](./mobile/assentsREADME/api_funcionando.png)
 
 ---
