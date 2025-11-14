@@ -5,8 +5,27 @@ import { useState } from 'react';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { omdbAPI } from '../(tabs)/services/omdbAPI';
+import { useFonts } from 'expo-font';
+import * as SplashScreen from 'expo-splash-screen';
+import { useEffect } from 'react';
+
+SplashScreen.preventAutoHideAsync().catch(() => {});
+
 
 export default function HomeScreen() {
+
+  const [fontsLoaded] = useFonts({
+    'Bungee-Regular': require('../../assets/fonts/Bungee-Regular.ttf'),
+  });
+  useEffect(() => {
+    if (fontsLoaded) {
+      SplashScreen.hideAsync();
+    }
+  }, [fontsLoaded]);
+  
+  if (!fontsLoaded) {
+    return null;
+  }
 
   const [loading, setLoading] = useState(false);
   const [movie, setMovie] = useState<any>(null);
@@ -193,7 +212,7 @@ const styles = StyleSheet.create({
   },
   teste4: {
     color: '#FFBE63',
-    fontFamily: 'ui-sans-serif',
+    fontFamily: 'Bungee-Regular',
   },
 
   opniao: {
@@ -207,6 +226,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     backgroundColor: '#00002B',
     marginLeft: 10,
+    fontFamily: 'Bungee-Regular',
   },
 
   texto: {
@@ -284,7 +304,8 @@ const styles = StyleSheet.create({
     color: '#A22020',
     fontSize: 20,
     backgroundColor: '#00002B',
-    marginRight: '67%'
+    marginRight: '67%',
+    fontFamily: 'Bungee-Regular',
   },
 
   imvila: {
@@ -319,7 +340,8 @@ const styles = StyleSheet.create({
     color: '#519548',
     fontSize: 20,
     backgroundColor: '#00002B',
-    marginRight: '73%'
+    marginRight: '73%',
+    fontFamily: 'Bungee-Regular',
   },
 
   newImageStyle545: {
@@ -342,6 +364,7 @@ const styles = StyleSheet.create({
     marginRight: '60%',
     color: '#D85CFC',
     fontSize: 20,
+    fontFamily: 'Bungee-Regular',
   },
 
   nomej: {
@@ -363,6 +386,7 @@ const styles = StyleSheet.create({
     marginRight: '68%',
     color: '#377A98',
     fontSize: 20,
+    fontFamily: 'Bungee-Regular',
   },
 
   nomed: {
